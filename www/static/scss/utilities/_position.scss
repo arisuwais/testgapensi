@@ -1,0 +1,116 @@
+/*! ########## 4.9 Position ########## */
+
+.u-pos-absolute--top,
+.u-pos-absolute--right,
+.u-pos-absolute--bottom,
+.u-pos-absolute--left {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.u-pos-fixed--top,
+.u-pos-fixed--right,
+.u-pos-fixed--bottom,
+.u-pos-fixed--left {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+// Top,Right,Bottom,Left Position
+$num: 0;
+@while $num <= 100 {
+  .u-pos-top--#{$num} { top: #{$num}px; }
+  .u-pos-right--#{$num} { right: #{$num}px; }
+  .u-pos-bottom--#{$num} { bottom: #{$num}px; }
+  .u-pos-left--#{$num} { left: #{$num}px; }
+
+  .u-pos-top--neg-#{$num} { top: -#{$num}px; }
+  .u-pos-right--neg-#{$num} { right: -#{$num}px; }
+  .u-pos-bottom--neg-#{$num} { bottom: -#{$num}px; }
+  .u-pos-left--neg-#{$num} { left: -#{$num}px; }
+
+  .u-pos-auto--#{$num} {
+    top: #{$num}px;
+    right: #{$num}px;
+    bottom: #{$num}px;
+    left: #{$num}px;
+  }
+
+  .u-pos-x--#{$num} {
+    left: #{$num}px;
+    right: #{$num}px;
+  }
+
+  .u-pos-y--#{$num} {
+    left: #{$num}px;
+    right: #{$num}px;
+  }
+
+  $num: $num + 5;
+}
+
+.u-left--100 { left: 100px; }
+.u-left--200 { left: 200px; }
+.u-left--300 { left: 300px; }
+.u-left--400 { left: 400px; }
+
+// Position
+.u-pos-absolute { position: absolute !important; }
+.u-pos-relative { position: relative !important; }
+.u-pos-fixed { position: fixed !important; }
+.u-pos-static { position: static !important; }
+
+.u-pos-absolute--full {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.u-pos-absolute--top { bottom: auto; }
+.u-pos-absolute--right { left: auto; }
+.u-pos-absolute--bottom { top: auto; }
+.u-pos-absolute--left { right: auto; }
+
+.u-pos-fixed-top { bottom: auto; }
+.u-pos-fixed-right { left: auto; }
+.u-pos-fixed-bottom { top: auto; }
+.u-pos-fixed-left { right: auto; }
+
+.u-pos-left--auto { left: auto; }
+.u-pos-right--auto { right: auto; }
+.u-pos-top--auto { top: auto; }
+.u-pos-bottom--auto { bottom: auto; }
+
+.z-index-1   { z-index: 1; }
+.z-index-50  { z-index: 50; }
+.z-index-100 { z-index: 100; }
+.z-index-150 { z-index: 150; }
+.z-index-200 { z-index: 200; }
+
+@mixin do-position($viewport) {
+  .u-pos-#{$viewport}-absolute { position: absolute; }
+  .u-pos-#{$viewport}-relative { position: relative; }
+  .u-pos-#{$viewport}-fixed { position: fixed; }
+  .u-pos-#{$viewport}-static { position: static; }
+
+  .u-pos-top-#{$viewport}--auto { top: auto; }
+  .u-pos-right-#{$viewport}--auto { right: auto; }
+  .u-pos-bottom-#{$viewport}--auto { bottom: auto; }
+  .u-pos-left-#{$viewport}--auto { left: auto; }
+
+  .u-pos-right-#{$viewport}--20 { right: 20px; }
+
+  // add more properties here if you need something to add
+}
+
+@media (min-width: 480px) { @include do-position("xs"); }
+@include media-breakpoint-up(sm) { @include do-position("sm"); }
+@include media-breakpoint-up(md) { @include do-position("md"); }
+@include media-breakpoint-up(lg) { @include do-position("lg"); }
+@include media-breakpoint-up(xl) { @include do-position("xl"); }

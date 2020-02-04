@@ -1,0 +1,90 @@
+/*! ########## 3.3 Buttons ########## */
+
+.c-btn {
+  font-family: $font-family-base;
+  font-size: $font-size-sm;
+
+  &:hover,
+  &:focus { cursor: pointer; }
+
+  &:active,
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.c-btn--default {
+  background-color: $gray-lighter;
+  border: 1px solid darken($gray-lighter,12%);
+}
+
+.c-btn__icon {
+  padding: 9px 0;
+  width: 40px;
+  text-align: center;
+  display: inline-block;
+}
+
+.c-btn__icon-sm {
+  width: 30px;
+  height: 30px;
+  padding: 7px 0;
+  text-align: center;
+  display: inline-block;
+}
+
+.c-btn--secondary {
+  border-color: $gray-lighter;
+}
+
+.c-btn--rounded { @include border-radius(50px); }
+.c-btn--noborder { border-color: transparent; }
+
+// Color variant
+// button-variant(bgcolor, bordercolor);
+// button-outline-variant(color);
+.c-btn--white { @include button-variant(#fff, #fff); }
+.c-btn--inverse { @include button-variant($gray-dark, darken($gray-dark, 2%)); }
+.c-btn--gray { @include button-variant($gray, darken($gray, 2%)); }
+.c-btn--gray-light { @include button-variant($gray-light, darken($gray-light, 2%)); }
+.c-btn--pink { @include button-variant($color-pink, darken($color-pink, 5%)); }
+.c-btn--yellow { @include button-variant($color-yellow, darken($color-yellow, 5%)); }
+.c-btn--orange { @include button-variant($color-orange, darken($color-orange, 5%)); }
+.c-btn--maroon { @include button-variant($color-maroon, darken($color-maroon, 5%)); }
+.c-btn--teal { @include button-variant($color-teal, darken($color-teal, 5%)); }
+.c-btn--turquiose { @include button-variant($color-turquiose, darken($color-turquiose, 5%)); }
+.c-btn--gray-lighter { @include button-variant($gray-lighter, darken($gray-lighter, 5%)); }
+
+.c-btn__outline--inverse { @include button-outline-variant($gray-dark); }
+.c-btn__outline--pink { @include button-outline-variant($color-pink); }
+.c-btn__outline--yellow { @include button-outline-variant($color-yellow); }
+.c-btn__outline--orange { @include button-outline-variant($color-orange); }
+.c-btn__outline--maroon { @include button-outline-variant($color-maroon); }
+.c-btn__outline--teal { @include button-outline-variant($color-teal); }
+.c-btn__outline--gray-lighter { @include button-outline-variant($gray-lighter); }
+.c-btn__outline--gray-light { @include button-outline-variant($gray-500); }
+.c-btn__outline--gray { @include button-outline-variant($gray); }
+
+.c-btn__outline--white {
+  @include button-outline-variant(#fff);
+  opacity: .75;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: transparent;
+    opacity: 1;
+  }
+}
+
+.c-btn--primary,
+.c-btn--success,
+.c-btn--warning,
+.c-btn--info,
+.c-btn--danger,
+.c-btn--inverse {
+  &:active {
+    color: #fff;
+  }
+}

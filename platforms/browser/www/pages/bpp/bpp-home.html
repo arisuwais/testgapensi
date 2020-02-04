@@ -1,0 +1,1542 @@
+<template>
+   <!-- page starter -->
+   <div class="page" data-name="home">
+      <!-- navbar top -->
+      <div class="navbar">
+         <div class="navbar-inner sliding">
+            <!-- logo in left -->
+            <div class="left">
+               <img src="../../assets/logo/logo-gapensi-wide.png" width="146" alt="logo gapensi">
+            </div>
+            <!-- logo in left -->
+
+            <!-- search in right -->
+            <div class="right">
+               <a class="link icon-only searchbar-enable" data-searchbar=".searchbar-components">
+                  <i class="icon f7-icons if-not-md">search</i>
+                  <i class="icon material-icons md-only">search</i>
+               </a>
+            </div>
+            <!-- search in right -->
+
+            <!-- search form container -->
+            <form data-search-container=".components-list" data-search-in="a"
+               class="searchbar searchbar-expandable searchbar-components searchbar-init">
+               <div class="searchbar-inner">
+                  <div class="searchbar-input-wrap">
+                     <input type="search" placeholder="Apa yang anda cari ?" />
+                     <i class="searchbar-icon"></i>
+                     <span class="input-clear-button"></span>
+                  </div>
+                  <span class="searchbar-disable-button if-not-aurora">Cancel</span>
+               </div>
+            </form>
+            <!-- search form container -->
+         </div>
+      </div>
+      <!-- navbar top -->
+
+
+      <!-- scrollable page content-->
+      <div class="page-content">
+         <!-- content for search -->
+         <div class="components-list searchbar-found">
+            <!-- banner slider -->
+            <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="10" class="swiper-container u-pad-x--0 u-mrgn-x--0 swiper-init demo-swiper-multiple swiper-button-custom u-mrgn-bottom--0">
+               <div class="swiper-pagination"></div>
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper-slide-img"><img src="../../assets/slider/home-slider-1.jpg" alt="home slider 1"></div>
+                  <div class="swiper-slide swiper-slide-img"><img src="../../assets/slider/home-slider-2.jpg" alt="home slider 2"></div>
+                  <div class="swiper-slide swiper-slide-img"><img src="../../assets/slider/home-slider-3.jpg" alt="home slider 3"></div>
+                  <div class="swiper-slide swiper-slide-img"><img src="../../assets/slider/home-slider-4.jpg" alt="home slider 4"></div>
+               </div>
+            </div>
+            <!-- banner slider -->
+
+
+            <!-- menu display -->
+            <div class="c-box-layout u-pad-x--0 u-mrgn-bottom--10">
+               <ul class="row normalize-unlisted col3-repeat-mrgn-top--15">
+                  <!-- menu profil -->
+                  <li class="col-3">
+                     <a href="/bpp-profil/">
+                        <div class="u-txt--center">
+                           <img src="../../assets/icon-menu/menu-profil.png" width="53" alt="menu profil">
+                        </div>
+                        <div class="u-txt--13 u-fg--gray-dark u-font--normal u-txt--center">Profil</div>
+                     </a>
+                  </li>
+                  <!-- menu profil -->
+
+                  <!-- menu organisasi -->
+                  <li class="col-3">
+                     <a href="/bpp-organisasi/">
+                        <div class="u-txt--center">
+                           <img src="../../assets/icon-menu/menu-organisasi.png" width="53" alt="menu organisasi">
+                        </div>
+                        <div class="u-txt--13 u-fg--gray-dark u-font--normal u-txt--center">Organisasi</div>
+                     </a>
+                  </li>
+                  <!-- menu organisasi -->
+
+                  <!-- menu anggota -->
+                  <li class="col-3">
+                     <a href="/bpp-anggota/">
+                        <div class="u-txt--center">
+                           <img src="../../assets/icon-menu/menu-anggota.png" width="53" alt="menu anggota">
+                        </div>
+                        <div class="u-txt--13 u-fg--gray-dark u-font--normal u-txt--center">Anggota</div>
+                     </a>
+                  </li>
+                  <!-- menu anggota -->
+
+                  <!-- menu sertifikasi -->
+                  <li class="col-3">
+                     <a href="/bpp-sertifikasi/">
+                        <div class="u-txt--center">
+                           <img src="../../assets/icon-menu/menu-sertifikasi.png" width="53" alt="menu sertifikasi">
+                        </div>
+                        <div class="u-txt--13 u-fg--gray-dark u-font--normal u-txt--center">Sertifikasi</div>
+                     </a>
+                  </li>
+                  <!-- menu sertifikasi -->
+
+                  <!-- menu agenda -->
+                  <li class="col-3">
+                     <a href="/bpp-agenda/">
+                        <div class="u-txt--center">
+                           <img src="../../assets/icon-menu/menu-agenda.png" width="53" alt="menu agenda">
+                        </div>
+                        <div class="u-txt--13 u-fg--gray-dark u-font--normal u-txt--center">Agenda</div>
+                     </a>
+                  </li>
+                  <!-- menu agenda -->
+
+                  <!-- menu pengumuman -->
+                  <li class="col-3">
+                     <a href="/bpp-info/">
+                        <div class="u-txt--center">
+                           <img src="../../assets/icon-menu/menu-pengumuman.png" width="53" alt="menu pengumuman">
+                        </div>
+                        <div class="u-txt--13 u-fg--gray-dark u-font--normal u-txt--center">Info</div>
+                     </a>
+                  </li>
+                  <!-- menu pengumuman -->
+
+                  <!-- menu berita -->
+                  <li class="col-3">
+                     <a href="/bpp-news/">
+                        <div class="u-txt--center">
+                           <img src="../../assets/icon-menu/menu-berita.png" width="53" alt="menu berita">
+                        </div>
+                        <div class="u-txt--13 u-fg--gray-dark u-font--normal u-txt--center">Berita</div>
+                     </a>
+                  </li>
+                  <!-- menu berita -->
+
+                  <!-- menu lainnya -->
+                  <li class="col-3">
+                     <a href="#" class="sheet-open" data-sheet=".sheet-menu-lainnya">
+                        <div class="u-txt--center">
+                           <img src="../../assets/icon-menu/menu-lainnya.png" width="53" alt="menu lainnya">
+                        </div>
+                        <div class="u-txt--13 u-fg--gray-dark u-font--normal u-txt--center">Lainnya</div>
+                     </a>
+                  </li>
+                  <!-- menu lainnya -->
+               </ul>
+            </div>
+            <!-- menu display -->
+
+
+            <!-- tentang gapensi -->
+            <div class="c-box-layout u-mrgn-bottom--10">
+               <!-- title -->
+               <div class="c-title-only">
+                  <div class="c-text">Tentang Gapensi</div>
+                  <div class="c-text-border"></div>
+               </div>
+               <!-- title -->
+
+               <!-- content -->
+               <div class="c-text-description u-txt-ellipsis-6 u-mrgn-bottom--5">
+                  GAPENSI adalah Asosiasi Jasa Konstruksi Nasional, didirikan di Tretes Provinsi Jawa Timur pada tanggal 8 Januari 1959, merupakna Asosisasi Jasa Konstruksi tertua dan terbesar di Indonesia. GAPENSI juga adalah Anggota Luar Biasa Kamar Dagang dan Industri Indonesia dan merupakan Anggota Kelompok Unsur Perusahaan Jasa Konstruksi pada Lembaga pengembangan Jasa Konstruksi Nasional atau LPJKN yang didirikan berdasarkan Undang-Undang Nomer 18 Tahun 1999. 
+               </div>
+               <a href="#" class="c-text-link popup-open" data-popup=".popup-about-gapensi">Baca Selengkapnya</a>
+               <!-- content -->
+            </div>
+            <!-- tentang gapensi -->
+
+
+            <!-- pengumuman terbaru -->
+            <div class="c-box-layout u-pad-x--0 u-mrgn-bottom--10">
+               <!-- title -->
+               <div class="c-title-with-nav u-pad-x--15">
+                  <div>
+                     <div class="c-text">Pengumuman Terbaru</div>
+                     <div class="c-text-border"></div>
+                  </div>
+                  <a href="/bpp-info/">Lihat Semua</a>
+               </div>
+               <!-- title -->
+
+               <!-- content -->
+               <div data-space-between="0" data-slides-per-view="auto" data-centered-slides="false" class="swiper-container swiper-init demo-swiper-multiple demo-swiper-multiple-auto">
+                  <div class="swiper-wrapper swiper-wrapper-mrgn-15">
+                     <!-- content 1 -->
+                     <div class="swiper-slide swiper-slide-75p swiper-slide-card">
+                        <div class="c-card c-card-slide">
+                           <a href="/bpp-info-detail/">
+                              <!-- title -->
+                              <h1 class="c-title u-mrgn-bottom--10">Seminar Nasional GAPENSI 2019</h1>
+                              <!-- tag -->
+                              <div class="u-mrgn-bottom--10">
+                                 <div class="c-btn c-btn--tag u-mrgn-right--5">Seminar</div>
+                                 <div class="c-btn c-btn--penting">Penting</div>
+                              </div>
+                              <!-- description -->
+                              <div class="c-text c-txt-long-truncate u-mrgn-bottom--15">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi molestiae eligendi cupiditate aut, alias illo veniam officia? Eius eaque, dolores nesciunt itaque nulla, quia maiores incidunt, deserunt repellat ullam nisi.</div>
+                              <!-- more link -->
+                              <div class="c-text-link u-txt--center">Baca Selengkapnya</div>
+                           </a>
+                        </div>
+                     </div>
+                     <!-- content 1 -->
+
+                     <!-- content 2 -->
+                     <div class="swiper-slide swiper-slide-75p swiper-slide-card">
+                        <div class="c-card c-card-slide">
+                           <a href="/bpp-info-detail/">
+                              <!-- title -->
+                              <h1 class="c-title u-mrgn-bottom--10">Seminar Nasional GAPENSI 2019</h1>
+                              <!-- tag -->
+                              <div class="u-mrgn-bottom--10">
+                                 <div class="c-btn c-btn--tag u-mrgn-right--5">Seminar</div>
+                                 <div class="c-btn c-btn--segera">Segera</div>
+                              </div>
+                              <!-- description -->
+                              <div class="c-text c-txt-long-truncate u-mrgn-bottom--15">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi molestiae eligendi cupiditate aut, alias illo veniam officia? Eius eaque, dolores nesciunt itaque nulla, quia maiores incidunt, deserunt repellat ullam nisi.</div>
+                              <!-- more link -->
+                              <div class="c-text-link u-txt--center">Baca Selengkapnya</div>
+                           </a>
+                        </div>
+                     </div>
+                     <!-- content 2 -->
+
+                     <!-- content 3 -->
+                     <div class="swiper-slide swiper-slide-75p swiper-slide-card">
+                        <div class="c-card c-card-slide">
+                           <a href="/bpp-info-detail/">
+                              <!-- title -->
+                              <h1 class="c-title u-mrgn-bottom--10">Seminar Nasional GAPENSI 2019</h1>
+                              <!-- tag -->
+                              <div class="u-mrgn-bottom--10">
+                                 <div class="c-btn c-btn--tag u-mrgn-right--5">Seminar</div>
+                                 <div class="c-btn c-btn--penting">Penting</div>
+                              </div>
+                              <!-- description -->
+                              <div class="c-text c-txt-long-truncate u-mrgn-bottom--15">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi molestiae eligendi cupiditate aut, alias illo veniam officia? Eius eaque, dolores nesciunt itaque nulla, quia maiores incidunt, deserunt repellat ullam nisi.</div>
+                              <!-- more link -->
+                              <div class="c-text-link u-txt--center">Baca Selengkapnya</div>
+                           </a>
+                        </div>
+                     </div>
+                     <!-- content 3 -->
+                  </div>
+               </div>
+               <!-- content -->
+            </div>
+            <!-- pengumuman terbaru -->
+
+
+            <!-- pengurus pusat -->
+            <div class="c-box-layout u-pad-x--0 u-mrgn-bottom--10">
+               <!-- title -->
+               <div class="c-title-with-nav u-pad-x--15">
+                  <div>
+                     <div class="c-text">Pengurus Pusat</div>
+                     <div class="c-text-border"></div>
+                  </div>
+                  <a href="/bpp-pengurus/">Lihat Semua</a>
+               </div>
+               <!-- title -->
+
+               <!-- content -->
+               <div data-space-between="0" data-slides-per-view="auto" data-centered-slides="false" class="swiper-container swiper-init demo-swiper-multiple demo-swiper-multiple-auto">
+                  <div class="swiper-wrapper swiper-wrapper-mrgn-15">
+                     <!-- content 1 -->
+                     <div class="swiper-slide swiper-slide-55p">
+                        <!-- box content custom -->
+                        <div class="c-box">
+                           <article class="c-box-display">
+                              <!-- media -->
+                              <div class="c-box-media">
+                                 <a href="/bpp-pengurus-detail/" title="" class="c-box-media__link">
+                                    <picture>
+                                       <img class="c-media-image" src="../../assets/photo/photo-profil-07.jpg" alt="foto pengurus">
+                                    </picture>
+                                 </a>
+                              </div>
+                              <!-- media -->
+
+                              <!-- desc -->
+                              <a href="/bpp-pengurus-detail/" class="c-box-description">
+                                 <div class="c-text u-txt--13 u-txt-lh--1 u-txt-ellipsis-1">Iskandar Z Hartawi</div>
+                                 <div class="c-text u-txt--12 u-fg--gray">Ketua Umum</div>
+                              </a>
+                              <!-- desc -->
+                           </article>
+                        </div>
+                        <!-- box content custom -->
+                     </div>
+                     <!-- content 1 -->
+
+                     <!-- content 2 -->
+                     <div class="swiper-slide swiper-slide-55p">
+                        <!-- box content custom -->
+                        <div class="c-box">
+                           <article class="c-box-display">
+                              <!-- media -->
+                              <div class="c-box-media">
+                                 <a href="/bpp-pengurus-detail/" title="" class="c-box-media__link">
+                                    <picture>
+                                       <img class="c-media-image" src="../../assets/photo/photo-profil-19.jpg" alt="foto pengurus">
+                                    </picture>
+                                 </a>
+                              </div>
+                              <!-- media -->
+
+                              <!-- desc -->
+                              <a href="/bpp-pengurus-detail/" class="c-box-description">
+                                 <div class="c-text u-txt--13 u-txt-lh--1">Andi Rukman Nurdin</div>
+                                 <div class="c-text u-txt--12 u-fg--gray">Sekretaris Jenderal</div>
+                              </a>
+                              <!-- desc -->
+                           </article>
+                        </div>
+                        <!-- box content custom -->
+                     </div>
+                     <!-- content 2 -->
+
+                     <!-- content 3 -->
+                     <div class="swiper-slide swiper-slide-55p">
+                        <!-- box content custom -->
+                        <div class="c-box">
+                           <article class="c-box-display">
+                              <!-- media -->
+                              <div class="c-box-media">
+                                 <a href="/bpp-pengurus-detail/" title="" class="c-box-media__link">
+                                    <picture>
+                                       <img class="c-media-image" src="../../assets/photo/photo-profil-24.jpg" alt="foto pengurus">
+                                    </picture>
+                                 </a>
+                              </div>
+                              <!-- media -->
+
+                              <!-- desc -->
+                              <a href="/bpp-pengurus-detail/" class="c-box-description">
+                                 <div class="c-text u-txt--13 u-txt-lh--1">Ken Pangestu</div>
+                                 <div class="c-text u-txt--12 u-fg--gray">Sekretaris Jenderal</div>
+                              </a>
+                              <!-- desc -->
+                           </article>
+                        </div>
+                        <!-- box content custom -->
+                     </div>
+                     <!-- content 3 -->
+
+                     <!-- content 4 -->
+                     <div class="swiper-slide swiper-slide-55p">
+                        <!-- box content custom -->
+                        <div class="c-box">
+                           <article class="c-box-display">
+                              <!-- media -->
+                              <div class="c-box-media">
+                                 <a href="/bpp-pengurus-detail/" title="" class="c-box-media__link">
+                                    <picture>
+                                       <img class="c-media-image" src="../../assets/photo/photo-profil-13.jpg" alt="foto pengurus">
+                                    </picture>
+                                 </a>
+                              </div>
+                              <!-- media -->
+
+                              <!-- desc -->
+                              <a href="/bpp-pengurus-detail/" class="c-box-description">
+                                 <div class="c-text u-txt--13 u-txt-lh--1">Bambang Hartadi</div>
+                                 <div class="c-text u-txt--12 u-fg--gray">Direktur Eksekutif</div>
+                              </a>
+                              <!-- desc -->
+                           </article>
+                        </div>
+                        <!-- box content custom -->
+                     </div>
+                     <!-- content 4 -->
+                  </div>
+               </div>
+               <!-- content -->
+            </div>
+            <!-- pengurus pusat -->
+
+
+            <!-- statistik -->
+            <div class="c-box-layout u-mrgn-bottom--10">
+               <!-- title -->
+               <div class="c-title-with-nav">
+                  <div>
+                     <div class="c-text">Statistik Anggota</div>
+                     <div class="c-text-border"></div>
+                  </div>
+                  <a href="/statistik/">Lihat Semua</a>
+               </div>
+               <!-- title -->
+
+               <!-- content -->
+               <div>
+                  
+               </div>
+               <!-- content -->
+            </div>
+            <!-- statistik -->
+
+
+            <!-- agenda -->
+            <div class="c-box-layout u-pad-x--0 u-mrgn-bottom--10">
+               <!-- title -->
+               <div class="c-title-with-nav u-pad-x--15">
+                  <div>
+                     <div class="c-text">Agenda Gapensi</div>
+                     <div class="c-text-border"></div>
+                  </div>
+                  <a href="https://www.tokopedia.com" class="external" target="_system">Lihat Semua</a>
+               </div>
+               <!-- title -->
+
+               <!-- content -->
+               <div data-space-between="0" data-slides-per-view="auto" data-centered-slides="false" class="swiper-container swiper-init demo-swiper-multiple demo-swiper-multiple-auto">
+                  <div class="swiper-wrapper swiper-wrapper-mrgn-15">
+                     <!-- list 1 -->
+                     <div class="swiper-slide swiper-slide-75p swiper-slide-card">
+                        <div class="c-card c-card-list">
+                           <div class="c-card-nav">
+                              <div class="c-title">Agenda Rapat</div>
+                              <a href="/agenda-rapat/">
+                                 <i class="icon f7-icons">chevron_right</i>
+                              </a>
+                           </div>
+                           <ul class="c-unlisted">
+                              <li class="c-list-dashed">
+                                 <a href="/agenda-rapat-detail/" target="_blank" class="external">
+                                    <div class="u--flex u-justify-content--start u-align-items--start">
+                                       <div class="c-date-block">29<br>JUN</div>
+                                       <div class="u-mrgn-left--10">
+                                          <div class="c-list u-mrgn-bottom--5">Rapat badan pengurus harian GAPENSI Pusat</div>
+                                          <div class="c-list-location">
+                                             <img src="../../assets/icon/icon-location.png" width="16" alt="icon location">
+                                             <span class="u-mrgn-left--5">Ritz Carlton Hotel</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                              <li class="c-list-dashed">
+                                 <a href="/agenda-rapat-detail/" target="_blank" class="external">
+                                    <div class="u--flex u-justify-content--start u-align-items--start">
+                                       <div class="c-date-block">11<br>APR</div>
+                                       <div class="u-mrgn-left--10">
+                                          <div class="c-list u-mrgn-bottom--5">Rapat badan pimpinan lengkap GAPENSi Pusat</div>
+                                          <div class="c-list-location">
+                                             <img src="../../assets/icon/icon-location.png" width="16" alt="icon location">
+                                             <span class="u-mrgn-left--5">Ritz Carlton Hotel</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                              <li class="c-list-dashed">
+                                 <a href="/agenda-rapat-detail/" target="_blank" class="external">
+                                    <div class="u--flex u-justify-content--start u-align-items--start">
+                                       <div class="c-date-block">3<br>APR</div>
+                                       <div class="u-mrgn-left--10">
+                                          <div class="c-list u-mrgn-bottom--5">Rapat pimpinan Nasional GAPENSI Pusat</div>
+                                          <div class="c-list-location">
+                                             <img src="../../assets/icon/icon-location.png" width="16" alt="icon location">
+                                             <span class="u-mrgn-left--5">Ritz Carlton Hotel</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                              <li class="c-list-dashed">
+                                 <a href="/agenda-rapat-detail/" target="_blank" class="external">
+                                    <div class="u--flex u-justify-content--start u-align-items--start">
+                                       <div class="c-date-block">28<br>AUG</div>
+                                       <div class="u-mrgn-left--10">
+                                          <div class="c-list u-mrgn-bottom--5">Rapat Koordinasi GAPENSI Pusat</div>
+                                          <div class="c-list-location">
+                                             <img src="../../assets/icon/icon-location.png" width="16" alt="icon location">
+                                             <span class="u-mrgn-left--5">Ritz Carlton Hotel</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                              <li class="c-list-dashed">
+                                 <a href="/agenda-rapat-detail/" target="_blank" class="external">
+                                    <div class="u--flex u-justify-content--start u-align-items--start">
+                                       <div class="c-date-block">10<br>OKT</div>
+                                       <div class="u-mrgn-left--10">
+                                          <div class="c-list u-mrgn-bottom--5">Rapat Koordinasi GAPENSI Pusat</div>
+                                          <div class="c-list-location">
+                                             <img src="../../assets/icon/icon-location.png" width="16" alt="icon location">
+                                             <span class="u-mrgn-left--5">Ritz Carlton Hotel</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <!-- list 1 -->
+
+                     <!-- list 2 -->
+                     <div class="swiper-slide swiper-slide-75p swiper-slide-card">
+                        <div class="c-card c-card-list">
+                           <div class="c-card-nav">
+                              <div class="c-title">Agenda Musyawarah</div>
+                              <a href="/agenda-musyawarah/">
+                                 <i class="icon f7-icons">chevron_right</i>
+                              </a>
+                           </div>
+                           <ul class="c-unlisted">
+                              <li class="c-list-dashed">
+                                 <a href="/agenda-musyawarah-detail/" target="_blank" class="external">
+                                    <div class="u--flex u-justify-content--start u-align-items--start">
+                                       <div class="c-date-block">11<br>JAN</div>
+                                       <div class="u-mrgn-left--10">
+                                          <div class="c-list u-mrgn-bottom--5">Rapat badan pengurus harian GAPENSI Pusat</div>
+                                          <div class="c-list-location">
+                                             <img src="../../assets/icon/icon-location.png" width="16" alt="icon location">
+                                             <span class="u-mrgn-left--5">Ritz Carlton Hotel</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                              <li class="c-list-dashed">
+                                 <a href="/agenda-musyawarah-detail/" target="_blank" class="external">
+                                    <div class="u--flex u-justify-content--start u-align-items--start">
+                                       <div class="c-date-block">20<br>FEB</div>
+                                       <div class="u-mrgn-left--10">
+                                          <div class="c-list u-mrgn-bottom--5">Rapat badan pimpinan lengkap GAPENSi Pusat</div>
+                                          <div class="c-list-location">
+                                             <img src="../../assets/icon/icon-location.png" width="16" alt="icon location">
+                                             <span class="u-mrgn-left--5">Ritz Carlton Hotel</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                              <li class="c-list-dashed">
+                                 <a href="/agenda-musyawarah-detail/" target="_blank" class="external">
+                                    <div class="u--flex u-justify-content--start u-align-items--start">
+                                       <div class="c-date-block">5<br>MAR</div>
+                                       <div class="u-mrgn-left--10">
+                                          <div class="c-list u-mrgn-bottom--5">Rapat pimpinan Nasional GAPENSI Pusat</div>
+                                          <div class="c-list-location">
+                                             <img src="../../assets/icon/icon-location.png" width="16" alt="icon location">
+                                             <span class="u-mrgn-left--5">Ritz Carlton Hotel</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                              <li class="c-list-dashed">
+                                 <a href="/agenda-musyawarah-detail/" target="_blank" class="external">
+                                    <div class="u--flex u-justify-content--start u-align-items--start">
+                                       <div class="c-date-block">12<br>APR</div>
+                                       <div class="u-mrgn-left--10">
+                                          <div class="c-list u-mrgn-bottom--5">Rapat Koordinasi GAPENSI Pusat</div>
+                                          <div class="c-list-location">
+                                             <img src="../../assets/icon/icon-location.png" width="16" alt="icon location">
+                                             <span class="u-mrgn-left--5">Ritz Carlton Hotel</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                              <li class="c-list-dashed">
+                                 <a href="/agenda-musyawarah-detail/" target="_blank" class="external">
+                                    <div class="u--flex u-justify-content--start u-align-items--start">
+                                       <div class="c-date-block">14<br>NOV</div>
+                                       <div class="u-mrgn-left--10">
+                                          <div class="c-list u-mrgn-bottom--5">Rapat Koordinasi GAPENSI Pusat</div>
+                                          <div class="c-list-location">
+                                             <img src="../../assets/icon/icon-location.png" width="16" alt="icon location">
+                                             <span class="u-mrgn-left--5">Ritz Carlton Hotel</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <!-- list 2 -->
+
+                     <!-- list 3 -->
+                     <div class="swiper-slide swiper-slide-75p swiper-slide-card">
+                        <div class="c-card c-card-list">
+                           <div class="c-card-nav">
+                              <div class="c-title">Agenda External</div>
+                              <a href="/agenda-external/">
+                                 <i class="icon f7-icons">chevron_right</i>
+                              </a>
+                           </div>
+                           <ul class="c-unlisted">
+                              <li class="c-list-dashed">
+                                 <a href="/agenda-external-detail/" target="_blank" class="external">
+                                    <div class="u--flex u-justify-content--start u-align-items--start">
+                                       <div class="c-date-block">29<br>JUN</div>
+                                       <div class="u-mrgn-left--10">
+                                          <div class="c-list u-mrgn-bottom--5">Rapat badan pengurus harian GAPENSI Pusat</div>
+                                          <div class="c-list-location">
+                                             <img src="../../assets/icon/icon-location.png" width="16" alt="icon location">
+                                             <span class="u-mrgn-left--5">Ritz Carlton Hotel</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                              <li class="c-list-dashed">
+                                 <a href="/agenda-external-detail/" target="_blank" class="external">
+                                    <div class="u--flex u-justify-content--start u-align-items--start">
+                                       <div class="c-date-block">11<br>APR</div>
+                                       <div class="u-mrgn-left--10">
+                                          <div class="c-list u-mrgn-bottom--5">Rapat badan pimpinan lengkap GAPENSi Pusat</div>
+                                          <div class="c-list-location">
+                                             <img src="../../assets/icon/icon-location.png" width="16" alt="icon location">
+                                             <span class="u-mrgn-left--5">Ritz Carlton Hotel</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                              <li class="c-list-dashed">
+                                 <a href="/agenda-external-detail/" target="_blank" class="external">
+                                    <div class="u--flex u-justify-content--start u-align-items--start">
+                                       <div class="c-date-block">3<br>APR</div>
+                                       <div class="u-mrgn-left--10">
+                                          <div class="c-list u-mrgn-bottom--5">Rapat pimpinan Nasional GAPENSI Pusat</div>
+                                          <div class="c-list-location">
+                                             <img src="../../assets/icon/icon-location.png" width="16" alt="icon location">
+                                             <span class="u-mrgn-left--5">Ritz Carlton Hotel</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                              <li class="c-list-dashed">
+                                 <a href="/agenda-external-detail/" target="_blank" class="external">
+                                    <div class="u--flex u-justify-content--start u-align-items--start">
+                                       <div class="c-date-block">28<br>AUG</div>
+                                       <div class="u-mrgn-left--10">
+                                          <div class="c-list u-mrgn-bottom--5">Rapat Koordinasi GAPENSI Pusat</div>
+                                          <div class="c-list-location">
+                                             <img src="../../assets/icon/icon-location.png" width="16" alt="icon location">
+                                             <span class="u-mrgn-left--5">Ritz Carlton Hotel</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                              <li class="c-list-dashed">
+                                 <a href="/agenda-external-detail/" target="_blank" class="external">
+                                    <div class="u--flex u-justify-content--start u-align-items--start">
+                                       <div class="c-date-block">10<br>OKT</div>
+                                       <div class="u-mrgn-left--10">
+                                          <div class="c-list u-mrgn-bottom--5">Rapat Koordinasi GAPENSI Pusat</div>
+                                          <div class="c-list-location">
+                                             <img src="../../assets/icon/icon-location.png" width="16" alt="icon location">
+                                             <span class="u-mrgn-left--5">Ritz Carlton Hotel</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <!-- list 3 -->
+
+                     <!-- list 4 -->
+                     <div class="swiper-slide swiper-slide-75p swiper-slide-card">
+                        <div class="c-card c-card-list">
+                           <div class="c-card-nav">
+                              <div class="c-title">Agenda Seminar</div>
+                              <a href="/agenda-seminar/">
+                                 <i class="icon f7-icons">chevron_right</i>
+                              </a>
+                           </div>
+                           <ul class="c-unlisted">
+                              <li class="c-list-dashed">
+                                 <a href="/agenda-seminar-detail/" target="_blank" class="external">
+                                    <div class="u--flex u-justify-content--start u-align-items--start">
+                                       <div class="c-date-block">29<br>JUN</div>
+                                       <div class="u-mrgn-left--10">
+                                          <div class="c-list u-mrgn-bottom--5">Rapat badan pengurus harian GAPENSI Pusat</div>
+                                          <div class="c-list-location">
+                                             <img src="../../assets/icon/icon-location.png" width="16" alt="icon location">
+                                             <span class="u-mrgn-left--5">Ritz Carlton Hotel</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                              <li class="c-list-dashed">
+                                 <a href="/agenda-seminar-detail/" target="_blank" class="external">
+                                    <div class="u--flex u-justify-content--start u-align-items--start">
+                                       <div class="c-date-block">11<br>APR</div>
+                                       <div class="u-mrgn-left--10">
+                                          <div class="c-list u-mrgn-bottom--5">Rapat badan pimpinan lengkap GAPENSi Pusat</div>
+                                          <div class="c-list-location">
+                                             <img src="../../assets/icon/icon-location.png" width="16" alt="icon location">
+                                             <span class="u-mrgn-left--5">Ritz Carlton Hotel</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                              <li class="c-list-dashed">
+                                 <a href="/agenda-seminar-detail/" target="_blank" class="external">
+                                    <div class="u--flex u-justify-content--start u-align-items--start">
+                                       <div class="c-date-block">3<br>APR</div>
+                                       <div class="u-mrgn-left--10">
+                                          <div class="c-list u-mrgn-bottom--5">Rapat pimpinan Nasional GAPENSI Pusat</div>
+                                          <div class="c-list-location">
+                                             <img src="../../assets/icon/icon-location.png" width="16" alt="icon location">
+                                             <span class="u-mrgn-left--5">Ritz Carlton Hotel</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                              <li class="c-list-dashed">
+                                 <a href="/agenda-seminar-detail/" target="_blank" class="external">
+                                    <div class="u--flex u-justify-content--start u-align-items--start">
+                                       <div class="c-date-block">28<br>AUG</div>
+                                       <div class="u-mrgn-left--10">
+                                          <div class="c-list u-mrgn-bottom--5">Rapat Koordinasi GAPENSI Pusat</div>
+                                          <div class="c-list-location">
+                                             <img src="../../assets/icon/icon-location.png" width="16" alt="icon location">
+                                             <span class="u-mrgn-left--5">Ritz Carlton Hotel</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                              <li class="c-list-dashed">
+                                 <a href="/agenda-seminar-detail/" target="_blank" class="external">
+                                    <div class="u--flex u-justify-content--start u-align-items--start">
+                                       <div class="c-date-block">10<br>OKT</div>
+                                       <div class="u-mrgn-left--10">
+                                          <div class="c-list u-mrgn-bottom--5">Rapat Koordinasi GAPENSI Pusat</div>
+                                          <div class="c-list-location">
+                                             <img src="../../assets/icon/icon-location.png" width="16" alt="icon location">
+                                             <span class="u-mrgn-left--5">Ritz Carlton Hotel</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <!-- list 4 -->
+                  </div>
+               </div>
+               <!-- content -->
+            </div>
+            <!-- agenda -->
+
+
+            <!-- regulasi -->
+            <div class="c-box-layout u-pad-x--0 u-mrgn-bottom--10">
+               <!-- title -->
+               <div class="c-title-only u-pad-x--15">
+                  <div class="c-text">Regulasi</div>
+                  <div class="c-text-border"></div>
+               </div>
+               <!-- title -->
+
+               <!-- content -->
+               <div data-space-between="0" data-slides-per-view="auto" data-centered-slides="false" class="swiper-container swiper-init demo-swiper-multiple demo-swiper-multiple-auto">
+                  <div class="swiper-wrapper swiper-wrapper-mrgn-15">
+                     <!-- list 1 -->
+                     <div class="swiper-slide swiper-slide-75p swiper-slide-card">
+                        <div class="c-card c-card-list">
+                           <div class="c-card-nav">
+                              <div class="c-title">Regulasi Jasa Konstruksi</div>
+                              <a href="/regulasi-jaskon/">
+                                 <i class="icon f7-icons">chevron_right</i>
+                              </a>
+                           </div>
+                           <ul class="c-unlisted">
+                              <li class="c-list-dashed">
+                                 <a href="../../assets/pdf/jasa-konstruksi/uu-1999-18.pdf" target="_blank" class="c-list external">Undang Undang Nomor 18 Tahun 1999 Tentang Jasa Konstruksi</a>
+                              </li>
+                              <li class="c-list-dashed">
+                                 <a href="../../assets/pdf/jasa-konstruksi/pp-2000-04.pdf" target="_blank" class="c-list external">Peraturan Pemerintah Nomor 04 Tahun 2010 Tentang Perubahan atas Peraturan Pemerintah Nomor 28 Tahun 2000 Tentang Usaha dan Peran Masyarakat Jasa Konstruksi</a>
+                              </li>
+                              <li class="c-list-dashed">
+                                 <a href="../../assets/pdf/jasa-konstruksi/pp-2000-29.pdf" target="_blank" class="c-list external">Peraturan Pemerintah Republik Indonesia Nomor 29 Tahun 2000 Tentang Penyelenggaraan Jasa Konstruksi</a>
+                              </li>
+                              <li class="c-list-dashed">
+                                 <a href="../../assets/pdf/jasa-konstruksi/pp-2010-28.pdf" target="_blank" class="c-list external">Peraturan Pemerintah Nomor 28 Tahun 2000 Tentang Usaha dan Peran Masyarakat Jasa Konstruksi</a>
+                              </li>
+                              <li class="c-list-dashed">
+                                 <a href="../../assets/pdf/jasa-konstruksi/PermenPUPR51-2015.pdf" target="_blank" class="c-list external">Peraturan Menteri Pekerjaan Umum Dan Perumahan Rakyat Republik Indonesia Nomor 51/PRT/M/2015 Tentang Tata Cara Pemilihan Pengurus, Masa Bakti, Tugas Pokok Dan Fungsi, Serta Mekanisme Kerja Lembaga Pengembangan Jasa Konstruksi</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <!-- list 1 -->
+
+                     <!-- list 2 -->
+                     <div class="swiper-slide swiper-slide-75p swiper-slide-card">
+                        <div class="c-card c-card-list">
+                           <div class="c-card-nav">
+                              <div class="c-title">Regulasi Gapensi</div>
+                              <!-- <a href="/regulasi-gapensi/">
+                                 <i class="icon f7-icons">chevron_right</i>
+                              </a> -->
+                           </div>
+                           <ul class="c-unlisted">
+                              <li class="c-list-dashed">
+                                 <a href="../../assets/pdf/jasa-konstruksi/uu-1999-18.pdf" target="_blank" class="c-list external">Ketetapan Musyawarah Nasional Gapensi</a>
+                              </li>
+                              <li class="c-list-dashed">
+                                 <a href="../../assets/pdf/jasa-konstruksi/pp-2000-04.pdf" target="_blank" class="c-list external">Ketetapan Musyawarah Nasional Khusus Gapensi</a>
+                              </li>
+                              <li class="c-list-dashed">
+                                 <a href="../../assets/pdf/jasa-konstruksi/pp-2000-29.pdf" target="_blank" class="c-list external">Himpunan Ketetapan-Ketetapan Musyawarah Kerja Nasional Gapensi</a>
+                              </li>
+                              <li class="c-list-dashed">
+                                 <a href="../../assets/pdf/jasa-konstruksi/pp-2010-28.pdf" target="_blank" class="c-list external">Rapat Pimpinan Nasional Konstruksi Gapensi Tanggal 16 November 2015</a>
+                              </li>
+                              <li class="c-list-dashed">
+                                 <a href="../../assets/pdf/jasa-konstruksi/PermenPUPR51-2015.pdf" target="_blank" class="c-list external">Petunjuk Pelaksanaan Registrasi Nasional Anggota GAPENSI Tahun 2017</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <!-- list 2 -->
+                  </div>
+               </div>
+               <!-- content -->
+            </div>
+            <!-- regulasi -->
+
+
+            <!-- berita -->
+            <div class="c-box-layout u-pad-x--0 u-mrgn-bottom--10">
+               <!-- title -->
+               <div class="c-title-only u-pad-x--15">
+                  <div class="c-text">Gapensi Headline News</div>
+                  <div class="c-text-border"></div>
+               </div>
+               <!-- title -->
+
+               <!-- content -->
+               <div class="c-box u-pad-x--15 u-mrgn-bottom--30">
+                  <article class="c-box-display">
+                     <!-- media -->
+                     <a href="/berita-detail/" class="c-box-media__link">
+                        <div class="c-box-media">
+                           <picture>
+                              <img class="c-media-image" src="../../assets/news/news-img-large.jpg" alt="headline news">
+                           </picture>
+                        </div>
+                     </a>
+                     <!-- media -->
+
+                     <!-- desc -->
+                     <div class="c-berita-large">
+                        <div class="c-berita-title">Swasta garap proyek infrastruktur, pemerintah bisa kurangi utang</div>
+                        <div class="c-berita-date u-fg--black u-mrgn-bottom--15">Selasa, 20 Februari 2018 <span
+                              class="u-mrgn-x--5">|</span>11:48 WIB</div>
+                        <div class="c-berita-desc u-txt-ellipsis-4 u-mrgn-bottom--15">Presiden Bank Dunia berpendapat, makin banyak swasta yang terlibat dalam pembangunan infrastruktur, bisa mengurangi beban pemerintah
+                           untuk menarik utang baru. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                           Perferendis modi, laborum cupiditate expedita consequuntur facere, commodi inventore
+                           obcaecati labore tempore earum illum, similique quas quo ut optio temporibus officia
+                           quidem?</div>
+                        
+                        <div class="u--flex u-justify-content--center u-align-items--center">
+                           <a href="/berita-detail/" class="c-text-link">Baca Selengkapnya</a>
+                        </div>
+                     </div>
+                     <!-- desc -->
+                  </article>
+               </div>
+               <!-- content -->
+
+               <!-- title -->
+               <div class="c-title-with-nav u-pad-x--15">
+                  <div>
+                     <div class="c-text">Gapensi News</div>
+                     <div class="c-text-border"></div>
+                  </div>
+                  <a href="/berita/">Lihat Semua</a>
+               </div>
+               <!-- title -->
+
+               <!-- content -->
+               <div data-space-between="0" data-slides-per-view="auto" data-centered-slides="false" class="swiper-container swiper-init demo-swiper-multiple demo-swiper-multiple-auto">
+                  <div class="swiper-wrapper swiper-wrapper-mrgn-15">
+                     <!-- content 1 -->
+                     <div class="swiper-slide swiper-slide-55p">
+                        <!-- box content custom -->
+                        <div class="c-box">
+                           <article class="c-box-display">
+                              <!-- media -->
+                              <a href="/berita-detail/" class="c-box-media__link">
+                                 <div class="c-box-media">
+                                    <picture>
+                                       <img class="c-media-image" src="../../assets/news/thumb-001.png" alt="news">
+                                    </picture>
+                                 </div>
+                              </a>
+                              <!-- media -->
+
+                              <!-- desc -->
+                              <a href="/berita-detail/" class="c-box-description u-pad-y--15">
+                                 <div class="c-text u-txt--13 u-txt-lh--4 u-txt-ellipsis-2 u-ht--40">14 Kecelakaan infrastruktur dalam 2 tahun, Basuki : Iki Ono Opo?</div>
+                                 <div class="c-text u-txt--13 u-mrgn-top--10">#ProyekHebat</div>
+                              </a>
+                              <!-- desc -->
+                           </article>
+                        </div>
+                        <!-- box content custom -->
+                     </div>
+                     <!-- content 1 -->
+
+                     <!-- content 2 -->
+                     <div class="swiper-slide swiper-slide-55p">
+                        <!-- box content custom -->
+                        <div class="c-box">
+                           <article class="c-box-display" >
+                              <!-- media -->
+                              <a href="/berita-detail/" class="c-box-media__link">
+                                 <div class="c-box-media">
+                                    <picture>
+                                       <img class="c-media-image" src="../../assets/news/thumb-002.png" alt="news">
+                                    </picture>
+                                 </div>
+                              </a>
+                              <!-- media -->
+
+                              <!-- desc -->
+                              <a href="/berita-detail/" class="c-box-description u-pad-y--15">
+                                 <div class="c-text u-txt--13 u-txt-lh--4 u-txt-ellipsis-2 u-ht--40">Plastik jadi aspal diterapkan tahun ini</div>
+                                 <div class="c-text u-txt--13 u-mrgn-top--10">#InfoTerbaru</div>
+                              </a>
+                              <!-- desc -->
+                           </article>
+                        </div>
+                        <!-- box content custom -->
+                     </div>
+                     <!-- content 2 -->
+
+                     <!-- content 3 -->
+                     <div class="swiper-slide swiper-slide-55p">
+                        <!-- box content custom -->
+                        <div class="c-box">
+                           <article class="c-box-display">
+                              <!-- media -->
+                              <a href="/berita-detail/" class="c-box-media__link">
+                                 <div class="c-box-media">
+                                    <picture>
+                                       <img class="c-media-image" src="../../assets/news/thumb-003.png" alt="news">
+                                    </picture>
+                                 </div>
+                              </a>
+                              <!-- media -->
+
+                              <!-- desc -->
+                              <a href="/berita-detail/" class="c-box-description u-pad-y--15">
+                                 <div class="c-text u-txt--13 u-txt-lh--4 u-txt-ellipsis-2 u-ht--40">Pemerintah bakal bangun Tol Bandung - Cilacap</div>
+                                 <div class="c-text u-txt--13 u-mrgn-top--10">#Pembangunan</div>
+                              </a>
+                              <!-- desc -->
+                           </article>
+                        </div>
+                        <!-- box content custom -->
+                     </div>
+                     <!-- content 3 -->
+
+                     <!-- content 4 -->
+                     <div class="swiper-slide swiper-slide-55p">
+                        <!-- box content custom -->
+                        <div class="c-box">
+                           <article class="c-box-display">
+                              <!-- media -->
+                              <a href="/berita-detail/" class="c-box-media__link">
+                                 <div class="c-box-media">
+                                    <picture>
+                                       <img class="c-media-image" src="../../assets/news/thumb-004.png" alt="news">
+                                    </picture>
+                                 </div>
+                              </a>
+                              <!-- media -->
+
+                              <!-- desc -->
+                              <a href="/berita-detail/" class="c-box-description u-pad-y--15">
+                                 <div class="c-text u-txt--13 u-txt-lh--4 u-txt-ellipsis-2 u-ht--40">Dampak pembangunan
+                                 infrastruktur mulai terasa tahun 2019</div>
+                                 <div class="c-text u-txt--13 u-mrgn-top--10">#InfoInfrastruktur</div>
+                              </a>
+                              <!-- desc -->
+                           </article>
+                        </div>
+                        <!-- box content custom -->
+                     </div>
+                     <!-- content 4 -->
+
+                     <!-- content 5 -->
+                     <div class="swiper-slide swiper-slide-55p">
+                        <!-- box content custom -->
+                        <div class="c-box">
+                           <article class="c-box-display">
+                              <!-- media -->
+                              <a href="/berita-detail/" class="c-box-media__link">
+                                 <div class="c-box-media">
+                                    <picture>
+                                       <img class="c-media-image" src="../../assets/news/thumb-005.png" alt="news">
+                                    </picture>
+                                 </div>
+                              </a>
+                              <!-- media -->
+
+                              <!-- desc -->
+                              <a href="/berita-detail/" class="c-box-description u-pad-y--15">
+                                 <div class="c-text u-txt--13 u-txt-lh--4 u-txt-ellipsis-2 u-ht--40">Investor besar Australia minati proyek infrastruktur RI</div>
+                                 <div class="c-text u-txt--13 u-mrgn-top--10">#InfoInvestor</div>
+                              </a>
+                              <!-- desc -->
+                           </article>
+                        </div>
+                        <!-- box content custom -->
+                     </div>
+                     <!-- content 5 -->
+                  </div>
+               </div>
+               <!-- content -->
+            </div>
+            <!-- berita -->
+
+
+            <!-- galeri photo -->
+            <div class="c-box-layout u-pad-x--0 u-mrgn-bottom--10">
+               <!-- title -->
+               <div class="c-title-with-nav u-pad-x--15">
+                  <div>
+                     <div class="c-text">Gapensi Instagram</div>
+                     <div class="c-text-border"></div>
+                  </div>
+                  <a href="https://www.instagram.com" class="external" target="_system">Lihat Semua</a>
+               </div>
+               <!-- title -->
+
+               <!-- content -->
+               <div data-space-between="0" data-slides-per-view="auto" data-centered-slides="false" class="swiper-container swiper-init demo-swiper-multiple demo-swiper-multiple-auto">
+                  <div class="swiper-wrapper swiper-wrapper-mrgn-15">
+                     <!-- content 1 -->
+                     <div class="swiper-slide swiper-slide-55p">
+                        <!-- box content custom -->
+                        <div class="c-box-instagram">
+                           <div class="c-box-instagram--head">
+                              <a href="" title="instagram gapensi">
+                                 <picture>
+                                    <img class="c-box-instagram--img" src="../../assets/instagram/instagram-01.jpg" alt="instagram">
+                                 </picture>
+                              </a>
+                           </div>
+                        </div>
+                        <!-- box content custom -->
+                     </div>
+                     <!-- content 1 -->
+
+                     <!-- content 2 -->
+                     <div class="swiper-slide swiper-slide-55p">
+                        <!-- box content custom -->
+                        <div class="c-box-instagram">
+                           <div class="c-box-instagram--head">
+                              <a href="" title="instagram gapensi">
+                                 <picture>
+                                    <img class="c-box-instagram--img" src="../../assets/instagram/instagram-02.jpg" alt="instagram">
+                                 </picture>
+                              </a>
+                           </div>
+                        </div>
+                        <!-- box content custom -->
+                     </div>
+                     <!-- content 2 -->
+
+                     <!-- content 3 -->
+                     <div class="swiper-slide swiper-slide-55p">
+                        <!-- box content custom -->
+                        <div class="c-box-instagram">
+                           <div class="c-box-instagram--head">
+                              <a href="" title="instagram gapensi">
+                                 <picture>
+                                    <img class="c-box-instagram--img" src="../../assets/instagram/instagram-03.jpg" alt="instagram">
+                                 </picture>
+                              </a>
+                           </div>
+                        </div>
+                        <!-- box content custom -->
+                     </div>
+                     <!-- content 3 -->
+
+                     <!-- content 4 -->
+                     <div class="swiper-slide swiper-slide-55p">
+                        <!-- box content custom -->
+                        <div class="c-box-instagram">
+                           <div class="c-box-instagram--head">
+                              <a href="" title="instagram gapensi">
+                                 <picture>
+                                    <img class="c-box-instagram--img" src="../../assets/instagram/instagram-04.jpg" alt="instagram">
+                                 </picture>
+                              </a>
+                           </div>
+                        </div>
+                        <!-- box content custom -->
+                     </div>
+                     <!-- content 4 -->
+
+                     <!-- content 5 -->
+                     <div class="swiper-slide swiper-slide-55p">
+                        <!-- box content custom -->
+                        <div class="c-box-instagram">
+                           <div class="c-box-instagram--head">
+                              <a href="" title="instagram gapensi">
+                                 <picture>
+                                    <img class="c-box-instagram--img" src="../../assets/instagram/instagram-05.jpg" alt="instagram">
+                                 </picture>
+                              </a>
+                           </div>
+                        </div>
+                        <!-- box content custom -->
+                     </div>
+                     <!-- content 5 -->
+
+                     <!-- content 6 -->
+                     <div class="swiper-slide swiper-slide-55p">
+                        <!-- box content custom -->
+                        <div class="c-box-instagram">
+                           <div class="c-box-instagram--head">
+                              <a href="" title="instagram gapensi">
+                                 <picture>
+                                    <img class="c-box-instagram--img" src="../../assets/instagram/instagram-06.jpg" alt="instagram">
+                                 </picture>
+                              </a>
+                           </div>
+                        </div>
+                        <!-- box content custom -->
+                     </div>
+                     <!-- content 6 -->
+                  </div>
+               </div>
+               <!-- content -->
+            </div>
+            <!-- galeri photo -->
+
+
+            <!-- galeri video -->
+            <div class="c-box-layout u-pad-x--0 u-mrgn-bottom--10">
+               <!-- title -->
+               <div class="c-title-with-nav u-pad-x--15">
+                  <div>
+                     <div class="c-text">Gapensi TV</div>
+                     <div class="c-text-border"></div>
+                  </div>
+                  <a href="https://www.youtube.com" class="external" target="_system">Lihat Semua</a>
+               </div>
+               <!-- title -->
+
+               <!-- content -->
+               <div data-space-between="0" data-slides-per-view="auto" data-centered-slides="false" class="swiper-container swiper-init demo-swiper-multiple demo-swiper-multiple-auto">
+                  <div class="swiper-wrapper swiper-wrapper-mrgn-15">
+                     <!-- content 1 -->
+                     <div class="swiper-slide swiper-slide-55p">
+                        <!-- box content custom -->
+                        <div class="c-box">
+                           <article class="c-box-display">
+                              <!-- media -->
+                              <a href="#" title="" class="c-box-media__link popup-open" data-popup=".popup-youtube">
+                                 <div class="c-box-media-overlay">
+                                    <div class="c-box-media">
+                                       <picture>
+                                          <img class="c-media-image" src="http://img.youtube.com/vi/HJskMWAIEV4/0.jpg" alt="video">
+                                       </picture>
+                                    </div>
+                                    <div class="o-overlay__block c-box-media-overlay__content">
+                                       <img width="40" src="../../assets/icon/icon-play.png" alt="icon play">
+                                    </div>
+                                 </div>
+                              </a>
+                              <!-- media -->
+
+                              <!-- desc -->
+                              <a href="#" class="c-box-description popup-open u-pad-y--15" data-popup=".popup-youtube">
+                                 <div class="c-text u-txt--13 u-txt-lh--4 u-txt-ellipsis-2 u-ht--40">Peresmian Pembukaan Musyawarah Nasional XIV GAPENSI</div>
+                              </a>
+                              <!-- desc -->
+                           </article>
+                        </div>
+                        <!-- box content custom -->
+                     </div>
+                     <!-- content 1 -->
+
+                     <!-- content 2 -->
+                     <div class="swiper-slide swiper-slide-55p">
+                        <!-- box content custom -->
+                        <div class="c-box">
+                           <article class="c-box-display">
+                              <!-- media -->
+                              <a href="#" title="" class="c-box-media__link popup-open" data-popup=".popup-youtube">
+                                 <div class="c-box-media-overlay">
+                                    <div class="c-box-media">
+                                       <picture>
+                                          <img class="c-media-image" src="http://img.youtube.com/vi/zJ7xBj_8K4U/0.jpg" alt="video">
+                                       </picture>
+                                    </div>
+                                    <div class="o-overlay__block c-box-media-overlay__content">
+                                       <img width="40" src="../../assets/icon/icon-play.png" alt="icon play">
+                                    </div>
+                                 </div>
+                              </a>
+                              <!-- media -->
+
+                              <!-- desc -->
+                              <a href="#" class="c-box-description popup-open u-pad-y--15" data-popup=".popup-youtube">
+                                 <div class="c-text u-txt--13 u-txt-lh--4 u-txt-ellipsis-2 u-ht--40">Pengurus Gapensi Menanti Jatah Proyek Infrastruktur
+
+                                    </div>
+                              </a>
+                              <!-- desc -->
+                           </article>
+                        </div>
+                        <!-- box content custom -->
+                     </div>
+                     <!-- content 2 -->
+
+                     <!-- content 3 -->
+                     <div class="swiper-slide swiper-slide-55p">
+                        <!-- box content custom -->
+                        <div class="c-box">
+                           <article class="c-box-display">
+                              <!-- media -->
+                              <a href="#" title="" class="c-box-media__link popup-open" data-popup=".popup-youtube">
+                                 <div class="c-box-media-overlay">
+                                    <div class="c-box-media">
+                                       <picture>
+                                          <img class="c-media-image" src="http://img.youtube.com/vi/GZck25QveC0/0.jpg" alt="video">
+                                       </picture>
+                                    </div>
+                                    <div class="o-overlay__block c-box-media-overlay__content">
+                                       <img width="40" src="../../assets/icon/icon-play.png" alt="icon play">
+                                    </div>
+                                 </div>
+                              </a>
+                              <!-- media -->
+
+                              <!-- desc -->
+                              <a href="#" class="c-box-description popup-open u-pad-y--15" data-popup=".popup-youtube">
+                                 <div class="c-text u-txt--13 u-txt-lh--4 u-txt-ellipsis-2 u-ht--40">Munasus dan Munas Gapensi KALSEL usulkan Jabatan Ketua Cukup Satu Periode</div>
+                              </a>
+                              <!-- desc -->
+                           </article>
+                        </div>
+                        <!-- box content custom -->
+                     </div>
+                     <!-- content 3 -->
+
+                     <!-- content 4 -->
+                     <div class="swiper-slide swiper-slide-55p">
+                        <!-- box content custom -->
+                        <div class="c-box">
+                           <article class="c-box-display">
+                              <!-- media -->
+                              <a href="#" title="" class="c-box-media__link popup-open" data-popup=".popup-youtube">
+                                 <div class="c-box-media-overlay">
+                                    <div class="c-box-media">
+                                       <picture>
+                                          <img class="c-media-image" src="http://img.youtube.com/vi/-Jku5Yg69Sw/0.jpg" alt="video">
+                                       </picture>
+                                    </div>
+                                    <div class="o-overlay__block c-box-media-overlay__content">
+                                       <img width="40" src="../../assets/icon/icon-play.png" alt="icon play">
+                                    </div>
+                                 </div>
+                              </a>
+                              <!-- media -->
+
+                              <!-- desc -->
+                              <a href="#" class="c-box-description popup-open u-pad-y--15" data-popup=".popup-youtube">
+                                 <div class="c-text u-txt--13 u-txt-lh--4 u-txt-ellipsis-2 u-ht--40">Construction Warrior 2019 Gapensi, KUPU GSC, dan TUKANG.COM</div>
+                              </a>
+                              <!-- desc -->
+                           </article>
+                        </div>
+                        <!-- box content custom -->
+                     </div>
+                     <!-- content 4 -->
+
+                     <!-- content 5 -->
+                     <div class="swiper-slide swiper-slide-55p">
+                        <!-- box content custom -->
+                        <div class="c-box">
+                           <article class="c-box-display">
+                              <!-- media -->
+                              <a href="#" title="" class="c-box-media__link popup-open" data-popup=".popup-youtube">
+                                 <div class="c-box-media-overlay">
+                                    <div class="c-box-media">
+                                       <picture>
+                                          <img class="c-media-image" src="http://img.youtube.com/vi/uVjf9471I5I/0.jpg" alt="video">
+                                       </picture>
+                                    </div>
+                                    <div class="o-overlay__block c-box-media-overlay__content">
+                                       <img width="40" src="../../assets/icon/icon-play.png" alt="icon play">
+                                    </div>
+                                 </div>
+                              </a>
+                              <!-- media -->
+
+                              <!-- desc -->
+                              <a href="#" class="c-box-description popup-open u-pad-y--15" data-popup=".popup-youtube">
+                                 <div class="c-text u-txt--13 u-txt-lh--4 u-txt-ellipsis-2 u-ht--40">Buka Muscab Gapensi Trenggalek Ke-7, Emil Dardak Tekankan Profesionalisme Kerja</div>
+                              </a>
+                              <!-- desc -->
+                           </article>
+                        </div>
+                        <!-- box content custom -->
+                     </div>
+                     <!-- content 5 -->
+                  </div>
+               </div>
+               <!-- content -->
+            </div>
+            <!-- galeri video -->
+         </div>
+         <!-- content for search -->
+
+
+         <!-- if search not found -->
+         <div class="list simple-list searchbar-not-found">
+            <ul>
+               <li class="u-txt--15 u-fg--primary u-font--normal">Data tidak ditemukan</li>
+            </ul>
+         </div>
+
+
+         <!-- sheet modal for menu -->
+         <div class="sheet-modal sheet-menu-lainnya" style="height:auto">
+            <div class="sheet-modal-inner">
+               <!-- handler -->
+               <div class="swipe-handler"></div>
+               <!-- content -->
+               <div class="page-content u-pad-y--20 u-pad-x--0">
+                  <ul class="row normalize-unlisted col3-repeat-mrgn-top--30 u-mrgn-y--30">
+                     <!-- menu profil -->
+                     <li class="col-3">
+                        <a href="/bpp-profil/">
+                           <div class="u-txt--center u-mrgn-bottom--5">
+                              <img src="../../assets/icon-menu/menu-profil.png" width="50" alt="menu profil">
+                           </div>
+                           <div class="u-txt--12 u-fg--gray-dark u-font--normal u-txt--center">Profil</div>
+                        </a>
+                     </li>
+                     <!-- menu profil -->
+   
+                     <!-- menu organisasi -->
+                     <li class="col-3">
+                        <a href="/bpp-organisasi/">
+                           <div class="u-txt--center u-mrgn-bottom--5">
+                              <img src="../../assets/icon-menu/menu-organisasi.png" width="50" alt="menu organisasi">
+                           </div>
+                           <div class="u-txt--12 u-fg--gray-dark u-font--normal u-txt--center">Organisasi</div>
+                        </a>
+                     </li>
+                     <!-- menu organisasi -->
+   
+                     <!-- menu anggota -->
+                     <li class="col-3">
+                        <a href="/bpp-anggota/">
+                           <div class="u-txt--center u-mrgn-bottom--5">
+                              <img src="../../assets/icon-menu/menu-anggota.png" width="50" alt="menu anggota">
+                           </div>
+                           <div class="u-txt--12 u-fg--gray-dark u-font--normal u-txt--center">Anggota</div>
+                        </a>
+                     </li>
+                     <!-- menu anggota -->
+   
+                     <!-- menu sertifikasi -->
+                     <li class="col-3">
+                        <a href="/bpp-sertifikasi/">
+                           <div class="u-txt--center u-mrgn-bottom--5">
+                              <img src="../../assets/icon-menu/menu-sertifikasi.png" width="50" alt="menu sertifikasi">
+                           </div>
+                           <div class="u-txt--12 u-fg--gray-dark u-font--normal u-txt--center">Sertifikasi</div>
+                        </a>
+                     </li>
+                     <!-- menu sertifikasi -->
+   
+                     <!-- menu agenda -->
+                     <li class="col-3">
+                        <a href="/bpp-agenda/">
+                           <div class="u-txt--center u-mrgn-bottom--5">
+                              <img src="../../assets/icon-menu/menu-agenda.png" width="50" alt="menu agenda">
+                           </div>
+                           <div class="u-txt--12 u-fg--gray-dark u-font--normal u-txt--center">Agenda</div>
+                        </a>
+                     </li>
+                     <!-- menu agenda -->
+   
+                     <!-- menu pengumuman -->
+                     <li class="col-3">
+                        <a href="/bpp-info/">
+                           <div class="u-txt--center u-mrgn-bottom--5">
+                              <img src="../../assets/icon-menu/menu-pengumuman.png" width="50" alt="menu pengumuman">
+                           </div>
+                           <div class="u-txt--12 u-fg--gray-dark u-font--normal u-txt--center">Info</div>
+                        </a>
+                     </li>
+                     <!-- menu pengumuman -->
+   
+                     <!-- menu berita -->
+                     <li class="col-3">
+                        <a href="/bpp-news/">
+                           <div class="u-txt--center u-mrgn-bottom--5">
+                              <img src="../../assets/icon-menu/menu-berita.png" width="50" alt="menu berita">
+                           </div>
+                           <div class="u-txt--12 u-fg--gray-dark u-font--normal u-txt--center">Berita</div>
+                        </a>
+                     </li>
+                     <!-- menu berita -->
+   
+                     <!-- regulasi -->
+                     <li class="col-3">
+                        <a href="/bpp-regulasi/">
+                           <div class="u-txt--center u-mrgn-bottom--5">
+                              <img src="../../assets/icon-menu/menu-regulasi.png" width="50" alt="regulasi">
+                           </div>
+                           <div class="u-txt--12 u-fg--gray-dark u-font--normal u-txt--center">Regulasi</div>
+                        </a>
+                     </li>
+                     <!-- regulasi -->
+
+                     <!-- galeri -->
+                     <li class="col-3">
+                        <a href="/bpp-galeri/">
+                           <div class="u-txt--center u-mrgn-bottom--5">
+                              <img src="../../assets/icon-menu/menu-galeri.png" width="50" alt="galeri">
+                           </div>
+                           <div class="u-txt--12 u-fg--gray-dark u-font--normal u-txt--center">Galeri</div>
+                        </a>
+                     </li>
+                     <!-- galeri -->
+
+                     <!-- kontak -->
+                     <li class="col-3">
+                        <a href="/bpp-kontak/">
+                           <div class="u-txt--center u-mrgn-bottom--5">
+                              <img src="../../assets/icon-menu/menu-kontak.png" width="50" alt="kontak">
+                           </div>
+                           <div class="u-txt--12 u-fg--gray-dark u-font--normal u-txt--center">Kontak</div>
+                        </a>
+                     </li>
+                     <!-- kontak -->
+                  </ul>
+               </div>
+               <!-- content -->
+            </div>
+         </div>
+         <!-- sheet modal for menu -->
+
+
+         <!-- popup full about gapensi -->
+         <div class="popup popup-about-gapensi">
+            <div class="page">
+               <div class="swipe-handler"></div>
+               <div class="page-content">
+                  <div class="block block-strong u-pad--20">
+                     <p>GAPENSI adalah Asosiasi Jasa Konstruksi Nasional, didirikan di Tretes Provinsi Jawa Timur pada tanggal 8 Januari 1959, merupakna Asosisasi Jasa Konstruksi tertua dan terbesar di Indonesia. GAPENSI juga adalah Anggota Luar Biasa Kamar Dagang dan Industri Indonesia dan merupakan Anggota Kelompok Unsur Perusahaan Jasa Konstruksi pada Lembaga pengembangan Jasa Konstruksi Nasional atau LPJKN yang didirikan berdasarkan Undang-Undang Nomer 18 Tahun 1999. </p>
+
+                     <p>Saat ini anggota GAPENSI sebanyak 42.102 perusahaan kontraktor,terdiri dari golongan kecil, menengah dan besar yang terbesar di seluruh Indonesia di 34 Provinsi dan 473 Kabupaten/Kota. Sebagai Asosiasi Jasa konstrusi, GAPENSI menyelenggarakan Program-program pendidikan dan pelatihan bagi anggota serta memberikan berbagai informasi terkini tentang produk, teknologi konstruksi dan peluang pasar untuk anggotanya.GAPENSI telah menerima KADIN AWARD "NUGRAHA ADHIKA" sebagai Asosiasi Peringkat Terbaik 1 Anggota Luar Biasa KADIN Indonesia. Pemilihan Badan Pimpian Pusat GAPENSI dilakukan melalui MUNAS yang dilakukan setiap 5 Tehun sekali sesuai ketentuan yang di lakukan dalam Anggota dasar dan Anggota Rumah Tangga GAPENSI.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- popup full about gapensi -->
+
+
+         <!-- popup video screen -->
+         <div class="popup popup-youtube">
+            <div class="page color-theme-gray theme-dark">
+               <div class="navbar u-bg--black">
+                  <div class="navbar-inner">
+                     <div class="left">
+                        <a href="#" class="link popup-close u-fg--white">
+                           <i class="icon f7-icons">close</i>
+                        </a>
+                     </div>
+                     <div class="title u-fg--white">Gapensi TV</div>
+                  </div>
+               </div>
+
+               <div class="page-content u--flex u-align-items--center">
+                  <div class="embed-responsive embed-responsive-16by9">
+                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HJskMWAIEV4?rel=0"
+                        allowfullscreen></iframe>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- popup video screen -->
+      </div>
+      <!-- scrollable page content-->
+   </div>
+   <!-- page starter -->
+</template>
+
+<script>
+   return {
+      on: {
+         pageInit: function () {
+            var self = this;
+            self.sheetSwipeToClose = self.$app.sheet.create({
+               el: '.sheet-menu-lainnya',
+               swipeToClose: true,
+               backdrop: true,
+            });
+            self.popupSwipeHandler = self.$f7.popup.create({
+               el: '.popup-about-gapensi',
+               swipeToClose: 'to-bottom',
+               swipeHandler: '.swipe-handler'
+            });
+         },
+         pageBeforeOut: function () {
+            var self = this;
+            // Close opened sheets on page out
+            self.$app.sheet.close();
+         },
+         pageBeforeRemove: function () {
+            var self = this;
+            // Destroy sheet modal when page removed
+            if (self.sheet) self.sheet.destroy();
+            if (self.popupSwipeHandler) self.popupSwipeHandler.destroy();
+         },
+      }
+   }
+</script>

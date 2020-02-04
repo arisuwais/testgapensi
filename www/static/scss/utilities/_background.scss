@@ -1,0 +1,73 @@
+/*! ########## 4.1 Background ########## */
+
+.u-bg--transparent { background-color: transparent !important; }
+.u-bg--inverse { background-color: $gray-dark; }
+.u-bg--gray-darker { background-color: darken($gray-dark, 3%) !important; }
+.u-bg--gray-dark { background-color: $gray-dark !important; }
+.u-bg--gray-dark-light { background-color: lighten($gray-dark, 5%) !important; }
+.u-bg--gray { background-color: $gray !important; }
+.u-bg--gray-light { background-color: $gray-light !important; }
+.u-bg--gray-lighter { background-color: $gray-lighter !important; }
+.u-bg--gray-lightest { background-color: $gray-lightest !important; }
+.u-bg--white { background-color: #fff !important; }
+.u-bg--black { background-color: #000 !important; }
+
+.u-bg--primary-dark { background-color: #212360; }
+
+@include bg-opacity('inverse', $brand-inverse);
+@include bg-opacity('white', #fff);
+@include bg-opacity('black', #000);
+
+// additional background goes here.
+.u-bg--superlight { background-color: #f1f3f6; }
+.u-bg--indigo { background-color: $color-indigo; }
+.u-bg--indigo-light { background-color: $color-indigo-light; }
+.u-bg--maroon { background-color: $color-maroon; }
+.u-bg--orange { background-color: $color-orange; }
+.u-bg--turquiose { background-color: $color-turquiose; }
+.u-bg--teal { background-color: $color-teal; }
+.u-bg--pink { background-color: $color-pink; }
+.u-bg--pink-light { background-color: $color-pink-light; }
+.u-bg--yellow { background-color: $color-yellow; }
+
+//background gradient
+.u-bg--mantle { @include gradient-x(#514A9D, #24C6DC); }
+.u-bg--reef { @include gradient-x(#3a7bd5, #00d2ff); }
+.u-bg--transfile { @include gradient-x(#CB3066, #16BFFD); }
+.u-bg--neon { @include gradient-x(#12FFF7, #B3FFAB); }
+.u-bg--delicate { @include gradient-x(#E9E4F0, #D3CCE3); }
+.u-bg--purple { @include gradient-x(#753a88, #cc2b5e); }
+.u-bg--emerald { @include gradient-x(#56B4D3, #348F50); }
+.u-bg--mojito { @include gradient-x(#1D976C, #93F9B9); }
+.u-bg--dance { @include gradient-x(#F9D423, #FF4E50); }
+.u-bg--teal-love { @include gradient-x(#11FFBD, #AAFFA9); }
+.u-bg--crystal-clear { @include gradient-x(#155799, #159957); }
+.u-bg--grandeur { @include gradient-x(#000046, #1CB5E0); }
+.u-bg--flickr { @include gradient-x(#33001b, #e20477); }
+.u-bg--royal { @include gradient-x(#141E30, #243B55); }
+
+@mixin background-breakpoint($viewport) {
+  .u-bg-#{$viewport}--transparent { background-color: transparent; }
+  .u-bg-#{$viewport}--white { background-color: #fff; }
+  .u-bg-#{$viewport}--superlight { background-color: #f1f3f6; }
+  .u-bg-#{$viewport}--gray-darker { background-color: darken($gray-dark, 3%); }
+  .u-bg-#{$viewport}--gray-dark { background-color: $gray-dark; }
+  .u-bg-#{$viewport}--gray-dark-light { background-color: lighten($gray-dark, 5%); }
+  .u-bg-#{$viewport}--gray { background-color: $gray; }
+
+  .u-bg-#{$viewport}--transparent { background-color: transparent !important; }                                   
+
+  @include bg-opacity($viewport + "-inverse", $brand-inverse);
+  @include bg-opacity($viewport + "-white", #fff);
+  @include bg-opacity($viewport + '-black', #000);
+}
+
+@media (min-width: 480px) { @include background-breakpoint("xs"); }
+@include media-breakpoint-up(sm) { @include background-breakpoint("sm"); }
+@include media-breakpoint-up(md) { @include background-breakpoint("md"); }
+@include media-breakpoint-up(lg) { @include background-breakpoint("lg"); }
+@include media-breakpoint-up(xl) { @include background-breakpoint("xl"); }
+
+.u-box-shadow--none {
+  box-shadow: none !important;
+}

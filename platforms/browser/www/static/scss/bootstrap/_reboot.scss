@@ -1,0 +1,147 @@
+/*! ########## 3.21 Reboot ########## */
+a {
+  @include transition($transition-base);
+
+  &:hover,
+  &:focus { text-decoration: none; }
+
+  &:active,
+  &:focus { outline: none; }
+
+  &.u-txt--info:hover,
+  &.u-txt--info:focus {
+    color: darken($brand-info, 5%) !important;
+  }
+
+  &.u-txt--primary:hover,
+  &.u-txt--primary:focus {
+    color: darken($brand-primary, 5%) !important;
+  }
+
+  &.u-txt--success:hover,
+  &.u-txt--success:focus {
+    color: darken($brand-success, 5%) !important;
+  }
+
+  &.u-txt--warning:hover,
+  &.u-txt--warning:focus {
+    color: darken($brand-warning, 5%) !important;
+  }
+
+  &.u-txt--danger:hover,
+  &.u-txt--danger:focus {
+    color: darken($brand-danger, 5%) !important;
+  }
+
+  &.u-txt--white:hover,
+  &.u-txt--white:focus {
+    opacity: .75 !important;
+    color: #fff !important;
+  }
+
+  &.u-txt--yellow:hover,
+  &.u-txt--yellow:focus {
+    color: darken($color-yellow, 10%) !important;
+  }
+
+  &.u-txt--gray-dark:hover,
+  &.u-txt--gray-dark:focus {
+    color: $brand-primary!important;
+  }
+
+  &.u-txt--gray:hover,
+  &.u-txt--gray:focus {
+    color: $gray-dark !important;
+  }
+
+  &.hover-primary:hover,
+  &.hover-primary:focus {
+    color: $brand-primary !important;
+  }
+
+  &.hover-success:hover,
+  &.hover-success:focus {
+    color: $brand-success !important;
+  }
+
+  &.hover-warning:hover,
+  &.hover-warning:focus {
+    color: $brand-warning !important;
+  }
+
+  &.hover-danger:hover,
+  &.hover-danger:focus {
+    color: $brand-danger !important;
+  }
+
+  &.hover-inverse:hover,
+  &.hover-inverse:focus {
+    color: $gray !important;
+  }
+
+  &.hover-info:hover,
+  &.hover-info:focus {
+    color: $brand-info !important;
+  }
+
+  &.hover-indigo:hover,
+  &.hover-indigo:focus {
+    color: $color-indigo !important;
+  }
+
+  &.hover-gray-dark:hover,
+  &.hover-gray-dark:focus {
+    color: $gray-dark !important;
+  }
+
+  &.hover-white:hover,
+  &.hover-white:focus {
+    color: $white !important;
+  }
+
+  &.hover-yellow:hover,
+  &.hover-yellow:focus {
+    color: $color-yellow !important;
+  }
+
+  &.hover-teal:hover,
+  &.hover-teal:focus {
+    color: $color-teal !important;
+  }
+
+  &.hover-pink:hover,
+  &.hover-pink:focus {
+    color: $color-pink !important;
+  }
+
+  &.hover-gray:hover,
+  &.hover-gray:focus {
+    color: $gray-dark !important;
+  }
+
+  &.hover-op-1:hover,
+  &.hover-op-1:focus {
+    opacity: .33 !important;
+  }
+
+  &.hover-op-2:hover,
+  &.hover-op-2:focus {
+    opacity: .66 !important;
+  }
+
+  &.hover-op-3:hover,
+  &.hover-op-3:focus {
+    opacity: .9 !important;
+  }
+
+  &.c-link--uppercase-sm {
+    text-transform: uppercase;
+    font-size: $font-size-xs;
+    font-weight: 500;
+    letter-spacing: .5;
+  }
+}
+
+small { font-size: $font-size-xs; }
+strong { font-weight: 600; }
+figure { margin-bottom: 0; }

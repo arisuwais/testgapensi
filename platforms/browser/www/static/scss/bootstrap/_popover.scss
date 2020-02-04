@@ -1,0 +1,76 @@
+/*! ########## 3.19 Popover ########## */
+
+.c-popover {
+  font-size: $font-size-xs;
+  background-color: transparent;
+  padding: 0;
+  @include border-radius();
+
+  &.c-popover--bottom::after,
+  &.bs-tether-element-attached-top::after {
+    border-bottom-color: #fff;
+  }
+
+  &.c-popover--bottom {
+    .c-popover__title::before { display: none; }
+  }
+}
+
+.c-popover__title {
+  font-size: $font-size-xs;
+  text-transform: uppercase;
+  color: $gray-dark;
+  background-color: transparent;
+  margin-bottom: 0;
+  padding: 12px 15px;
+  @include border-top-radius(3px);
+
+  &::before { display: none; }
+}
+
+.c-popover__body p:last-child { margin-bottom: 0;}
+
+.c-popover__title--gray-lightest {
+  .c-popover__title { background-color: $gray-lightest; }
+
+  &.c-popover__bottom::after,
+  &.bs-tether-element-attached-top::after {
+    border-bottom-color: $gray-lightest;
+  }
+}
+
+.c-popover--primary { .c-popover__title { color: $brand-primary; } }
+.c-popover--success { .c-popover__title { color: $brand-success; } }
+.c-popover--warning { .c-popover__title { color: $brand-warning; } }
+.c-popover--danger  { .c-popover__title { color: $brand-danger; } }
+.c-popover--info    { .c-popover__title { color: $brand-info; } }
+
+.c-popover-full--gray-lightest {
+  background-color: $gray-lightest;
+
+  .c-popover__title { border-color: transparent; }
+
+  &.c-popover-top::after,
+  &.bs-tether-element-attached-bottom::after {
+    border-top-color: $gray-lightest;
+  }
+
+  &.c-popover-bottom::after,
+  &.bs-tether-element-attached-top::after {
+    border-bottom-color: $gray-lightest;
+  }
+}
+
+.c-popover__title--primary { @include popover-title-variant($brand-primary); }
+.c-popover__title--success { @include popover-title-variant($brand-success); }
+.c-popover__title--warning { @include popover-title-variant($brand-warning); }
+.c-popover__title--danger  { @include popover-title-variant($brand-danger);  }
+.c-popover__title--info    { @include popover-title-variant($brand-info);    }
+.c-popover__title--inverse { @include popover-title-variant($brand-inverse); }
+
+.c-popover__full--primary       { @include popover-full-variant($brand-primary); }
+.c-popover__full--success       { @include popover-full-variant($brand-success); }
+.c-popover__full--warning       { @include popover-full-variant($brand-warning); }
+.c-popover__full--danger        { @include popover-full-variant($brand-danger);  }
+.c-popover__full--info          { @include popover-full-variant($brand-info);    }
+.c-popover__full--inverse       { @include popover-full-variant($brand-inverse); }

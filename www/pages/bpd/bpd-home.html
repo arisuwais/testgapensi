@@ -1,0 +1,176 @@
+<template>
+   <div class="page no-toolbar" data-name="bpd-home">
+      <!-- navbar -->
+      <div class="navbar">
+         <div class="navbar-inner sliding">
+            <div class="left">
+               <a href="#" class="link back">
+                  <i class="icon icon-back"></i>
+               </a>
+            </div>
+            <div class="title">{{BpdName.title}}</div>
+            <div class="right"></div>
+         </div>
+      </div>
+      <!-- navbar -->
+
+      <!-- toolbar in bottom -->
+      <div class="toolbar tabbar-labels toolbar-bottom">
+         <div class="toolbar-inner">
+            <!-- tab for home -->
+            <a href="#tab-bpd-home" class="tab-link tab-link-active">
+               <i class="icon f7-icons">home</i>
+               <i class="icon f7-icons icon-ios-fill ios-only">home_fill</i>
+               <span class="tabbar-label">Beranda</span>
+            </a>
+            <!-- tab for home -->
+
+            <!-- tab fof list (bpc) -->
+            <a href="#tab-bpc-list" class="tab-link">
+               <i class="icon f7-icons">sort_round</i>
+               <i class="icon f7-icons icon-ios-fill ios-only">sort_round_fill</i>
+               <span class="tabbar-label">Daftar BPC</span>
+            </a>
+            <!-- tab for list (bpc) -->
+
+            <!-- tab for akun -->
+            <a href="#" class="tab-link login-screen-open" data-login-screen="#my-login-screen">
+               <i class="icon f7-icons">person_round</i>
+               <i class="icon f7-icons icon-ios-fill ios-only">person_round_fill</i>
+               <span class="tabbar-label">Akun</span>
+            </a>
+            <!-- tab for akun -->
+         </div>
+      </div>
+      <!-- toolbar in bottom -->
+
+      <!-- tab container -->
+      <div class="tabs">
+         <!-- beranda -->
+         <div id="tab-bpd-home" class="page-content tab tab-active">
+            <div class="block-title">About {{BpdName.title}}</div>
+            <div class="list">
+               <ul>
+                  <li>
+                     <a href="/bpc-home/" class="item-content item-link">
+                        <div class="item-inner">
+                           <div class="item-title">About</div>
+                        </div>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <!-- beranda -->
+
+         <!-- list bpc -->
+         <div id="tab-bpc-list" class="page-content tab">
+            <div class="list links-list">
+               <ul>
+                  <li><a href="/bpc-home/">Kab. Bandung Barat</a></li>
+                  <li><a href="/bpc-home/">Kab. Bekasi</a></li>
+                  <li><a href="/bpc-home/">Kab. Ciamis</a></li>
+                  <li><a href="/bpc-home/">Kab. Cirebon</a></li>
+                  <li><a href="/bpc-home/">Kab. Indramayu</a></li>
+                  <li><a href="/bpc-home/">Kab. Kuningan</a></li>
+                  <li><a href="/bpc-home/">Kab. Purwakarta</a></li>
+                  <li><a href="/bpc-home/">Kab. Sukabumi</a></li>
+                  <li><a href="/bpc-home/">Kab. Tasikmalaya</a></li>
+                  <li><a href="/bpc-home/">Kota Banjar</a></li>
+                  <li><a href="/bpc-home/">Kota Bogor</a></li>
+                  <li><a href="/bpc-home/">Kota Cirebon</a></li>
+                  <li><a href="/bpc-home/">Kota Sukabumi</a></li>
+                  <li><a href="/bpc-home/">Kab. Bandung</a></li>
+                  <li><a href="/bpc-home/">Kab. Bogor</a></li>
+                  <li><a href="/bpc-home/">Kab. Cianjur</a></li>
+                  <li><a href="/bpc-home/">Kab. Garut</a></li>
+                  <li><a href="/bpc-home/">Kab. Karawang</a></li>
+                  <li><a href="/bpc-home/">Kab. Majalengka</a></li>
+                  <li><a href="/bpc-home/">Kab. Subang</a></li>
+                  <li><a href="/bpc-home/">Kab. Sumedang</a></li>
+                  <li><a href="/bpc-home/">Kota Bandung</a></li>
+                  <li><a href="/bpc-home/">Kota Bekasi</a></li>
+                  <li><a href="/bpc-home/">Kota Cimahi</a></li>
+                  <li><a href="/bpc-home/">Kota Depok</a></li>
+                  <li><a href="/bpc-home/">Kota Tasikmalaya</a></li>
+               </ul>
+            </div>
+         </div>
+         <!-- list bpc -->
+      </div>
+      <!-- tab container -->
+
+      <!-- popup login screen -->
+      <div class="login-screen" id="my-login-screen">
+         <div class="view">
+            <div class="page">
+               <div class="page-content login-screen-content">
+                  <div class="login-screen-title">Framework7</div>
+                  <form>
+                     <div class="list">
+                        <ul>
+                           <li class="item-content item-input item-input-with-value">
+                              <div class="item-inner">
+                                 <div class="item-title item-label">Username</div>
+                                 <div class="item-input-wrap">
+                                    <input type="text" placeholder="Your username" id="demo-username-2"
+                                       class="input-with-value">
+                                    <span class="input-clear-button"></span>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="item-content item-input">
+                              <div class="item-inner">
+                                 <div class="item-title item-label">Password</div>
+                                 <div class="item-input-wrap">
+                                    <input type="password" placeholder="Your password" id="demo-password-2" class="">
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="list">
+                        <ul>
+                           <li><a href="#" class="list-button" @click="signIn">Sign In</a></li>
+                        </ul>
+                        <div class="block-footer">Some text about login information.<br>Lorem ipsum dolor sit amet,
+                           consectetur
+                           adipiscing elit.</div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- popup login screen -->
+   </div>
+</template>
+
+<script>
+   return {
+      data: function () {
+         var BpdNameId = this.$route.params.id;
+         var currentName;
+         this.$root.BpdList.forEach(function (BpdName) {
+            if (BpdName.id === BpdNameId) {
+               currentName = BpdName;
+            }
+         });
+         return {
+            BpdName: currentName,
+         };
+      },
+      methods: {
+         signIn: function () {
+            var $ = this.$;
+            var app = this.$app;
+            var router = this.$router;
+            var username = $('input#demo-username-2').val();
+            var password = $('input#demo-password-2').val();
+            app.dialog.alert('Username: ' + username + '<br>Password: ' + password, function () {
+               app.loginScreen.close();
+            })
+         }
+      }
+   };
+</script>

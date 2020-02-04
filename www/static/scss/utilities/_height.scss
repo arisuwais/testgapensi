@@ -1,0 +1,84 @@
+/*! ########## 4.4 Height ########## */
+
+@mixin make-height($num, $viewport: "") {
+  $p: $num + "%";
+
+  @if $viewport == "" {
+    $viewport: "-";
+  } @else {
+    $viewport: "-" + $viewport + "-";
+  }
+
+  .u-ht#{$viewport}-#{$num} { height: #{$num}px !important; }
+  .u-ht#{$viewport}-#{$num}p { height: #{$p} !important; }
+  .u-ht#{$viewport}max--#{$num}p { max-height: #{$p} !important; }
+  .u-ht#{$viewport}min--#{$num}p { min-height: #{$p} !important; }
+}
+
+@mixin do-make-height($viewport) {
+  $num: 5;
+  @while $num <= 100 {
+    @include make-height($num,$viewport);
+    $num: $num + 5;
+  }
+}
+
+$num: 5;
+@while $num <= 100 {
+  @include make-height($num);
+  $num: $num + 5;
+}
+
+//height: 100px to 800px with step of 50px
+$num: 150;
+@while $num < 850 {
+  .u-ht--#{$num} { height: #{$num}px; }
+  $num: $num + 50;
+}
+
+@media (min-width: 480px) {
+  @include do-make-height("xs");
+  .u-ht-xs--100v { height: 100vh; }
+}
+
+@include media-breakpoint-up(sm) {
+  @include do-make-height("sm");
+  .u-ht-sm--100v { height: 100vh; }
+}
+
+@include media-breakpoint-up(md) {
+  @include do-make-height("md");
+  .u-ht-md--100v { height: 100vh; }
+  .u-ht-md--500 { height: 500px; } // used in photography-1
+}
+
+@include media-breakpoint-up(lg) {
+  @include do-make-height("lg");
+  .u-ht-lg--100v { height: 100vh; }
+}
+
+@include media-breakpoint-up(xl) {
+  @include do-make-height("xl");
+  .u-ht-xl--100v { height: 100vh; }
+}
+
+//custom heights
+.u-ht--1    { height: 1px;  }
+.u-ht--2    { height: 2px;  }
+.u-ht--3    { height: 3px;  }
+.u-ht--4    { height: 4px;  }
+.u-ht--6    { height: 6px;  }
+.u-ht--7    { height: 7px;  }
+.u-ht--8    { height: 8px;  }
+.u-ht--9    { height: 9px;  }
+
+.u-ht--auto { height: auto !important; }
+.u-ht--16   { height: 16px !important; }
+.u-ht--32   { height: 32px !important; }
+.u-ht--36   { height: 36px !important; }
+.u-ht--48   { height: 48px !important; }
+.u-ht--64   { height: 64px !important; }
+.u-ht--72   { height: 72px !important; }
+
+
+.u-ht--100v { height: 100vh; }

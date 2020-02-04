@@ -1,0 +1,78 @@
+<template>
+   <!-- page starter -->
+   <div class="page" data-name="bpd-list">
+      <!-- navbar -->
+      <div class="navbar">
+         <div class="navbar-inner u-flex u-align-items--center sliding">
+            <!-- title -->
+            <div class="title">Daftar BPD</div>
+            <!-- title -->
+
+            <!-- search in right -->
+            <div class="right">
+               <a class="link icon-only searchbar-enable" data-searchbar=".searchbar-for-bpd-list">
+                  <i class="icon f7-icons if-not-md">search</i>
+                  <i class="icon material-icons md-only">search</i>
+               </a>
+            </div>
+            <!-- search in right -->
+
+            <!-- search form container -->
+            <form data-search-container=".search-bpd-list" data-search-in="a"
+               class="searchbar searchbar-expandable searchbar-for-bpd-list searchbar-init">
+               <div class="searchbar-inner">
+                  <div class="searchbar-input-wrap">
+                     <input type="search" placeholder="Cari provinsi" />
+                     <i class="searchbar-icon"></i>
+                     <span class="input-clear-button"></span>
+                  </div>
+                  <span class="searchbar-disable-button if-not-aurora">Cancel</span>
+               </div>
+            </form>
+            <!-- search form container -->
+         </div>
+      </div>
+      <!-- navbar -->
+      
+      <!-- page content -->
+      <div class="page-content">
+         <!-- custom content card -->
+         <div class="c-card-custom">
+            <div class="c-card-title">
+               <div class="c-title">Temukan Provinsi Tujuan</div>
+            </div>
+
+            <div class="c-card-content">
+               <!-- listed with looping by ID -->
+               <div class="list links-list search-bpd-list searchbar-found">
+                  <ul>
+                     {{#each BpdList}}
+                     <li><a href="/bpd-home/{{id}}/">{{title}}</a></li>
+                     {{/each}}
+                  </ul>
+               </div>
+               <!-- if search not found -->
+               <div class="list simple-list searchbar-not-found">
+                  <ul>
+                     <li class="u-txt--15 u-fg--primary u-font--normal">Data tidak ditemukan</li>
+                  </ul>
+               </div>
+               <!-- listed with looping by ID -->
+            </div>
+         </div>
+         <!-- custom content card -->
+      </div>
+      <!-- page content -->
+   </div>
+   <!-- page starter -->
+</template>
+
+<script>
+   return {
+      data: function () {
+         return {
+            BpdList: this.$root.BpdList,
+         };
+      }
+   };
+</script>

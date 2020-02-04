@@ -1,0 +1,279 @@
+/*! ########## 4.11 Typography ########## */
+
+// Font family
+.u-font--roboto        { font-family: $font-family-roboto; }
+.u-font--opensans      { font-family: $font-family-opensans; }
+
+// Font weights
+.u-font--bold      { font-weight: 700 !important; }
+.u-font--semibold  { font-weight: 600 !important; }
+.u-font--medium    { font-weight: 500 !important; }
+.u-font--normal    { font-weight: 400 !important; }
+.u-font--light     { font-weight: 300 !important; }
+.u-font--thin      { font-weight: 200 !important; }
+.u-font--xthin     { font-weight: 100 !important; }
+
+// Font colors
+.u-fg--black           { color: #000 !important; }
+.u-fg--inverse         { color: $gray-dark !important; }
+.u-fg--gray-dark       { color: $gray-800 !important; }
+.u-fg--gray            { color: $gray-600 !important; }
+.u-fg--gray-light      { color: $gray-500 !important; }
+.u-fg--gray-lighter    { color: $gray-400 !important; }
+.u-fg--gray-lightest   { color: $gray-300 !important; }
+.u-fg--primary         { color: $brand-primary !important; }
+.u-fg--success         { color: $brand-success !important; }
+.u-fg--warning         { color: $brand-warning !important; }
+.u-fg--danger          { color: $brand-danger !important; }
+.u-fg--info            { color: $brand-info !important; }
+.u-fg--maroon          { color: $color-maroon !important; }
+.u-fg--pink            { color: $color-pink !important; }
+.u-fg--pink-light      { color: $color-pink-light !important; }
+.u-fg--yellow          { color: $color-yellow !important; }
+.u-fg--orange          { color: $color-orange !important; }
+.u-fg--indigo          { color: $color-indigo !important; }
+.u-fg--indigo-light    { color: $color-indigo-light !important; }
+.u-fg--teal            { color: $color-teal !important; }
+.u-fg--turquiose       { color: $color-turquiose !important; }
+.u-fg--flesh           { color: $color-flesh !important; }
+
+// Text white
+.u-fg--white           { color: #fff !important; }
+.u-fg--white-9         { color: rgba(#fff, 0.9); }
+.u-fg--white-8         { color: rgba(#fff, 0.8); }
+.u-fg--white-7         { color: rgba(#fff, 0.7); }
+.u-fg--white-6         { color: rgba(#fff, 0.6); }
+.u-fg--white-5         { color: rgba(#fff, 0.5); }
+.u-fg--white-4         { color: rgba(#fff, 0.4); }
+.u-fg--white-3         { color: rgba(#fff, 0.3); }
+.u-fg--white-2         { color: rgba(#fff, 0.2); }
+.u-fg--white-1         { color: rgba(#fff, 0.1); }
+
+
+// Font spacing
+.u-txt-spacing--1 { letter-spacing: 0.5px; }
+.u-txt-spacing--2 { letter-spacing: 1px; }
+.u-txt-spacing--3 { letter-spacing: 1.5px; }
+.u-txt-spacing--4 { letter-spacing: 2px; }
+.u-txt-spacing--5 { letter-spacing: 2.5px; }
+.u-txt-spacing--6 { letter-spacing: 3px; }
+.u-txt-spacing--7 { letter-spacing: 3.5px; }
+.u-txt-spacing--8 { letter-spacing: 4px; }
+
+.u-txt-spacing--neg-1 { letter-spacing: -0.5px; }
+.u-txt-spacing--neg-2 { letter-spacing: -1px; }
+.u-txt-spacing--neg-3 { letter-spacing: -1.5px; }
+.u-txt-spacing--neg-4 { letter-spacing: -2px; }
+.u-txt-spacing--neg-5 { letter-spacing: -2.5px; }
+.u-txt-spacing--neg-6 { letter-spacing: -3px; }
+.u-txt-spacing--neg-7 { letter-spacing: -3.5px; }
+.u-txt-spacing--neg-8 { letter-spacing: -4px; }
+
+// Others
+.u-txt--shadow { text-shadow: 1px 1px 3px rgba(0,0,0,0.3); }
+
+.u-txt--uppercase { text-transform: uppercase !important; }
+.u-txt--lowercase { text-transform: lowercase !important; }
+.u-txt--transform-none { text-transform: none !important; }
+
+.u-txt--center { text-align: center !important; }
+.u-txt--right { text-align: right !important; }
+.u-txt--left { text-align: left !important; }
+
+.u-txt--italic { font-style: italic !important; }
+.u-txt--normal { font-style: normal !important; }
+
+// Line Height
+.u-txt-lh--base   { line-height: $line-height-base; }
+.u-txt-lh--normal { line-height: normal; }
+
+.u-txt-lh--0 { line-height: 0; }
+.u-txt-lh--1 { line-height: 1.1; }
+.u-txt-lh--2 { line-height: 1.2; }
+.u-txt-lh--3 { line-height: 1.3; }
+.u-txt-lh--4 { line-height: 1.4; }
+.u-txt-lh--5 { line-height: 1.5; }
+.u-txt-lh--6 { line-height: 1.6; }
+.u-txt-lh--7 { line-height: 1.7; }
+.u-txt-lh--8 { line-height: 1.8; }
+.u-txt-lh--9 { line-height: 1.9; }
+.u-txt-lh--10 { line-height: 2.0; }
+.u-txt-lh--11 { line-height: 2.1; }
+.u-txt-lh--12 { line-height: 2.2; }
+.u-txt-lh--13 { line-height: 2.3; }
+.u-txt-lh--14 { line-height: 2.4; }
+.u-txt-lh--15 { line-height: 2.5; }
+
+// Vertical align
+.u-valign--top { vertical-align: top !important; }
+.u-valign--middle { vertical-align: middle !important; }
+.u-valign--bottom { vertical-align: baseline !important; }
+.u-valign-text--top { vertical-align: text-top !important; }
+.u-valign-text--bottom { vertical-align: text-bottom !important; }
+.u-valign--sub { vertical-align: sub !important; }
+.u-valign--super { vertical-align: super !important; }
+
+// Font sizes
+.display-5 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.u-txt--base {
+  font-size: $font-size-base ;
+  line-height: $line-height-base;
+}
+
+.u-txt-sm {
+  font-size: $font-size-sm;
+  line-height: 1.6;
+}
+
+.u-txt-xs {
+  font-size: $font-size-xs;
+  line-height: 1.5;
+}
+
+.u-txt-lg { font-size: $font-size-lg; }
+
+@mixin font-size($num, $viewport:"") {
+  @if $viewport == "" {
+    $viewport: "-";
+  } @else {
+    $viewport: "-" + $viewport + "-";
+  }
+  .u-txt#{$viewport}-#{$num} { font-size: #{$num}px !important; }
+}
+
+@mixin do-font-size($viewport) {
+  $num: 8;
+  @while $num <= 16 {
+    @include font-size($num,$viewport);
+    $num: $num + 1;
+  }
+
+  $num: 18;
+  @while $num <= 140 {
+    @include font-size($num,$viewport);
+    $num: $num + 2;
+  }
+}
+
+@mixin do-font-breakpoint($viewport) {
+  .u-txt-#{$viewport}--bold      { font-weight: 700; }
+  .u-txt-#{$viewport}--semibold  { font-weight: 600; }
+  .u-txt-#{$viewport}--medium    { font-weight: 500; }
+  .u-txt-#{$viewport}--normal    { font-weight: 400; }
+  .u-txt-#{$viewport}--light     { font-weight: 300; }
+  .u-txt-#{$viewport}--thin      { font-weight: 200; }
+  .u-txt-#{$viewport}--xthin     { font-weight: 100; }
+
+  .u-txt-lh-#{$viewport}--0 { line-height: 0; }
+  .u-txt-lh-#{$viewport}--1 { line-height: 1.1; }
+  .u-txt-lh-#{$viewport}--2 { line-height: 1.2; }
+  .u-txt-lh-#{$viewport}--3 { line-height: 1.3; }
+  .u-txt-lh-#{$viewport}--4 { line-height: 1.4; }
+  .u-txt-lh-#{$viewport}--5 { line-height: 1.5; }
+  .u-txt-lh-#{$viewport}--6 { line-height: 1.6; }
+  .u-txt-lh-#{$viewport}--7 { line-height: 1.7; }
+  .u-txt-lh-#{$viewport}--8 { line-height: 1.8; }
+  .u-txt-lh-#{$viewport}--9 { line-height: 1.9; }
+  .u-txt-lh-#{$viewport}--10 { line-height: 2.0; }
+  .u-txt-lh-#{$viewport}--11 { line-height: 2.1; }
+  .u-txt-lh-#{$viewport}--12 { line-height: 2.2; }
+  .u-txt-lh-#{$viewport}--13 { line-height: 2.3; }
+  .u-txt-lh-#{$viewport}--14 { line-height: 2.4; }
+  .u-txt-lh-#{$viewport}--15 { line-height: 2.5; }
+
+  .u-txt-#{$viewport}--white { color: #fff !important; }
+  .u-txt-#{$viewport}--inverse { color: $gray-dark !important; }
+  .u-txt-#{$viewport}--gray { color: $gray !important; }
+
+  .u-txt-spacing-#{$viewport}--2 { letter-spacing: 1px; }
+  .u-txt-spacing-#{$viewport}--4 { letter-spacing: 2px; }
+  .u-txt-spacing-#{$viewport}--6 { letter-spacing: 3px; }
+  .u-txt-spacing-#{$viewport}--8 { letter-spacing: 4px; }
+
+  .u-txt-spacing-#{$viewport}--neg-2 { letter-spacing: -1px; }
+  .u-txt-spacing-#{$viewport}--neg-4 { letter-spacing: -2px; }
+  .u-txt-spacing-#{$viewport}--neg-6 { letter-spacing: -3px; }
+  .u-txt-spacing-#{$viewport}--neg-8 { letter-spacing: -4px; }
+
+  .u-txt-#{$viewport}--center { text-align: center !important; }
+  .u-txt-#{$viewport}--right { text-align: right !important; }
+  .u-txt-#{$viewport}--left { text-align: left !important; }
+}
+
+$num: 8;
+@while $num <= 16 {
+  @include font-size($num);
+  $num: $num + 1;
+}
+
+$num: 18;
+@while $num <= 140 {
+  @include font-size($num);
+  $num: $num + 2;
+}
+
+@media (min-width: 480px) {
+  @include do-font-size("xs");
+  @include do-font-breakpoint("xs");
+}
+
+@include media-breakpoint-up(sm) {
+  @include do-font-size("sm");
+  @include do-font-breakpoint("sm");
+}
+
+@include media-breakpoint-up(md) {
+  @include do-font-size("md");
+  @include do-font-breakpoint("md");
+}
+
+@include media-breakpoint-up(lg) {
+  @include do-font-size("lg");
+  @include do-font-breakpoint("lg");
+}
+
+@include media-breakpoint-up(xl) {
+  @include do-font-size("xl");
+  @include do-font-breakpoint("xl");
+}
+
+.u-txt-ellipsis-1,
+.u-txt-ellipsis-2,
+.u-txt-ellipsis-3,
+.u-txt-ellipsis-4,
+.u-txt-ellipsis-5,
+.u-txt-ellipsis-6,
+.u-txt-ellipsis-7 {
+  display: -webkit-box !important;
+  white-space: normal;
+  word-break: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+
+.u-txt-ellipsis-1 {
+  -webkit-line-clamp: 1;
+}
+.u-txt-ellipsis-2 {
+  -webkit-line-clamp: 2;
+}
+.u-txt-ellipsis-3 {
+  -webkit-line-clamp: 3;
+}
+.u-txt-ellipsis-4 {
+  -webkit-line-clamp: 4;
+}
+.u-txt-ellipsis-5 {
+  -webkit-line-clamp: 5;
+}
+.u-txt-ellipsis-6 {
+  -webkit-line-clamp: 6;
+}
+.u-txt-ellipsis-7 {
+  -webkit-line-clamp: 7;
+}

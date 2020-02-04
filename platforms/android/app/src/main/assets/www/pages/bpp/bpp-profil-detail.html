@@ -1,0 +1,38 @@
+<template>
+   <div class="page no-toolbar" data-name="bpp-profil-detail">
+      <!-- navbar -->
+      <div class="navbar">
+         <div class="navbar-inner sliding">
+            <div class="left">
+               <a href="#" class="link back">
+                  <i class="icon icon-back"></i>
+               </a>
+            </div>
+            <div class="title">{{ProfilListName.title}}</div>
+            <div class="right"></div>
+         </div>
+      </div>
+      <!-- navbar -->
+
+      <!-- tab container -->
+      
+      <!-- tab container -->
+   </div>
+</template>
+
+<script>
+   return {
+      data: function () {
+         var ProfilListNameId = this.$route.params.id;
+         var currentName;
+         this.$root.ProfilList.forEach(function (ProfilListName) {
+            if (ProfilListName.id === ProfilListNameId) {
+               currentName = ProfilListName;
+            }
+         });
+         return {
+            ProfilListName: currentName,
+         };
+      }
+   };
+</script>

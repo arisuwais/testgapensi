@@ -1,0 +1,10 @@
+/*! ########## 3.20 Progress ########## */
+.c-progress__bar {
+  height: 15px;
+  font-size: 11px;
+  font-family: $font-family-roboto;
+}
+
+.c-progress__bar-xs  { height: 5px;  }
+.c-progress__bar-sm { height: 10px; }
+.c-progress__bar-lg { height: 20px; }

@@ -1,0 +1,14 @@
+/*! ########## 4.6 Opacity ########## */
+
+.u-opacity--0 { opacity: 0; }
+.u-opacity--1 { opacity: .3; }
+.u-opacity--2 { opacity: .6; }
+.u-opacity--3 { opacity: .9; }
+
+// This generate a class name of .transparent-1 having
+// a style of opacity: 0.1;
+$num: 0;
+@while $num < 10 {
+  .u-transparent--#{$num} { opacity: 0 + ($num * 0.1) !important; }
+  $num: $num + 1;
+}

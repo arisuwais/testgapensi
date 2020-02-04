@@ -1,0 +1,206 @@
+/*! ########## 3.16 Nav ########## */
+
+.c-nav--white {
+  .c-nav__link {
+    color: #fff;
+    opacity: .75;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      opacity: 1;
+    }
+  }
+
+  .active {
+    &,&:hover,
+    &:focus {
+      color: #fff;
+      opacity: 1;
+    }
+  }
+}
+
+.c-nav--success { @include nav-colored-variant($brand-success); }
+.c-nav--warning { @include nav-colored-variant($brand-warning); }
+.c-nav--danger { @include nav-colored-variant($brand-danger); }
+.c-nav--info { @include nav-colored-variant($brand-info); }
+.c-nav--inverse { @include nav-colored-variant($brand-inverse); }
+.c-nav--gray-dark { @include nav-colored-variant($gray-dark); }
+.c-nav--gray { @include nav-colored-variant($gray); }
+.c-nav--gray-light { @include nav-colored-variant($gray-light); }
+
+// Addon nav color, uncomment to activate
+// .c-nav-yellow { @include nav-colored-variant($color-yellow); }
+// .c-nav-pink { @include nav-colored-variant($color-pink); }
+// .c-nav-yellow { @include nav-colored-variant($color-yellow); }
+// .c-nav-teal { @include nav-colored-variant($color-teal); }
+
+.c-nav {
+  &.c-nav__active--primary .active { color: $brand-primary; }
+  &.c-nav__active--success .active { color: $brand-success; }
+  &.c-nav__active--warning .active { color: $brand-warning; }
+  &.c-nav__active--danger .active { color: $brand-danger; }
+  &.c-nav__active--info .active { color: $brand-info; }
+  &.c-nav__active--inverse .active { color: $gray-dark; }
+  &.c-nav__active--yellow .active { color: $color-yellow; }
+  &.c-nav__active--pink .active { color: $color-pink; }
+  &.c-nav__active--orange .active { color: $color-orange; }
+  &.c-nav__active--teal .active { color: $color-teal; }
+
+  .active-primary { color: $brand-primary; }
+  .active-success { color: $brand-success; }
+  .active-warning { color: $brand-warning; }
+  .active-danger { color: $brand-danger; }
+  .active-info { color: $brand-info; }
+  .active-inverse { color: $brand-inverse; }
+}
+
+.c-nav__pills {
+  .active-success { background-color: $brand-success !important; }
+  .active-warning { background-color: $brand-warning !important; }
+  .active-danger { background-color: $brand-danger !important; }
+  .active-info { background-color: $brand-info !important; }
+  .active-inverse { background-color: $brand-inverse !important; }
+}
+
+.c-nav__outline {
+  border-bottom: 1px solid $gray-lighter;
+  .c-nav__link.active {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 1em;
+      right: 1em;
+      bottom: -1px;
+      border-bottom: 1px solid $brand-primary;
+    }
+
+    &,&:hover,&:focus { color: $brand-primary; }
+  }
+
+  .active-success.active {
+    &,&:hover,&:focus { color: $brand-success; }
+    &::before { border-bottom-color: $brand-success; }
+  }
+
+  .active-warning.active {
+    &,&:hover,&:focus { color: $brand-warning; }
+    &::before { border-bottom-color: $brand-warning; }
+  }
+
+  .active-danger.active {
+    &,&:hover,&:focus { color: $brand-danger; }
+    &::before { border-bottom-color: $brand-danger; }
+  }
+
+  .active-info.active {
+    &,&:hover,&:focus { color: $brand-info; }
+    &::before { border-bottom-color: $brand-info; }
+  }
+
+  &.c-nav__active--teal {
+    .c-nav__link.active {
+      color: $color-teal;
+      &::before { border-bottom-color: $color-teal; }
+    }
+  }
+
+  &.c-nav__active--white {
+    .c-nav__link {
+      &.active {
+        color: #fff;
+        &::before { border-bottom-color: #fff; }
+      }
+    }
+  }
+
+  &.c-nav__active--orange {
+    .c-nav__link.active {
+      color: $color-orange;
+      &::before { border-bottom-color: $color-orange; }
+    }
+  }
+
+  &.c-nav__active--info {
+    .c-nav__link.active {
+      color: $brand-info;
+      &::before { border-bottom-color: $brand-info; }
+    }
+  }
+}
+
+.c-nav__outline--vertical {
+  .c-nav__link.active {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 5px;
+      bottom: 5px;
+      border-left: 3px solid $brand-primary;
+    }
+  }
+
+  &.c-nav__active--inverse {
+    .c-nav__link.active::before { border-color: $gray-dark; }
+  }
+
+  &.c-nav__active--success {
+    .c-nav__link.active {
+      color: $brand-inverse;
+      &::before { border-color: $brand-success; }
+    }
+  }
+}
+
+.c-nav__tabs {
+  .active-primary { color: $brand-primary !important; }
+  .active-success { color: $brand-success !important; }
+  .active-warning { color: $brand-warning !important; }
+  .active-danger { color: $brand-danger !important; }
+  .active-info { color: $brand-info !important; }
+  .active-inverse { color: $brand-inverse !important; }
+}
+
+
+.c-nav-md {
+  .c-nav__link { padding: 10px 20px; }
+}
+
+// Hover color variants
+.c-nav__hover--primary {
+  .c-nav__link {
+    &:hover,
+    &:focus {
+      color: $brand-primary;
+    }
+  }
+}
+
+// Hover background color variants
+.c-nav__hover--gray-lightest {
+  > .c-nav-item > .c-nav__link {
+    &:not(.active) {
+      &:hover,
+      &:focus {
+        background-color: $gray-lightest;
+        color: inherit;
+      }
+    }
+  }
+}
+
+.c-nav__stacked {
+  .c-nav__link {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &.active {
+      background-color: $brand-primary;
+      color: #fff;
+    }
+  }
+}

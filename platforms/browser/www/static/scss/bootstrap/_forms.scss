@@ -1,0 +1,41 @@
+/*! ########## 3.8 Forms ########## */
+
+.c-form__control {
+  font-family: $font-family-base;
+  font-size: $font-size-sm;
+
+  &.u-bg--gray-dark-light {
+    color: $gray-lighter;
+    &:focus,
+    &:active {
+      color: $gray-lighter;
+      background-color: lighten($gray-dark, 5%);
+    }
+  }
+}
+
+.c-form__control--inverse {
+  background-color: transparent;
+  border-color: rgba(#fff, .25);
+  color: #fff;
+
+  &:focus,
+  &:active {
+    border-color: rgba(#fff, .75);
+    background-color: transparent;
+    color: #fff;
+  }
+}
+
+.c-custom__checkbox .c-custom__control--indicator { @include border-radius(2px); }
+.c-custom__control--description { line-height: 1.9; }
+
+.c-custom__file-control--primary::before {
+  background-color: $brand-primary;
+  color: #fff;
+}
+
+.c-custom__file-control--inverse::before {
+  background-color: $brand-inverse;
+  color: #fff;
+}

@@ -1,0 +1,95 @@
+/*! ########## 4.12 Width ########## */
+
+//width mixin
+@mixin make-width($num, $viewport: "") {
+  $p: $num + "%";
+
+  @if $viewport == "" {
+    $viewport: "-";
+  } @else {
+    $viewport: "-" + $viewport + "-";
+  }
+
+  .u-wd#{$viewport}-#{$num} { width: #{$num}px !important; }
+  .u-wd#{$viewport}-#{$num}p { width: #{$p} !important; }
+  .u-wd#{$viewport}max--#{$num}p { max-width: #{$p} !important; }
+  .u-wd#{$viewport}min--#{$num}p { min-width: #{$p} !important; }
+}
+
+$num: 0;
+@while $num <= 150 {
+  @include make-width($num);
+  $num: $num + 5;
+}
+
+$num: 150;
+@while $num <= 1000 {
+  .u-wd--#{$num} { width: #{$num}px !important; }
+  $num: $num + 50;
+}
+
+@mixin do-make-width($viewport, $num, $max, $plus) {
+  @while $num <= $max {
+    @include make-width($num,$viewport);
+    $num: $num + $plus;
+  }
+}
+
+@media (min-width: 480px) {
+  @include do-make-width("xs",5,100,5);
+  @include do-make-width("xs",150,1000,50);
+
+  .u-wd-xs--auto { width: auto !important; }
+}
+
+@include media-breakpoint-up(sm) {
+  @include do-make-width("sm",5,100,5);
+  @include do-make-width("sm",150,1000,50);
+
+  .u-wd-sm--auto { width: auto !important; }
+}
+
+@include media-breakpoint-up(md) {
+  @include do-make-width("md",5,100,5);
+  @include do-make-width("md",150,1000,50);
+
+  .u-wd-md--auto { width: auto !important; }
+}
+
+@include media-breakpoint-up(lg) {
+  @include do-make-width("lg",5,100,5);
+  @include do-make-width("lg",150,1000,50);
+
+  .u-wd-lg--auto { width: auto !important; }
+}
+
+@include media-breakpoint-up(xl) {
+  @include do-make-width("xl",5,100,5);
+  @include do-make-width("xl",150,1000,50);
+
+  .u-wd-xl--auto { width: auto !important; }
+}
+
+
+
+
+// some additional widths
+.u-wd--1    { width: 1px;  }
+.u-wd--2    { width: 2px;  }
+.u-wd--3    { width: 3px;  }
+.u-wd--4    { width: 4px;  }
+.u-wd--6    { width: 6px;  }
+.u-wd--7    { width: 7px;  }
+.u-wd--8    { width: 8px;  }
+.u-wd--9    { width: 9px;  }
+.u-wd--16   { width: 16px; }
+.u-wd--32   { width: 32px; }
+.u-wd--36   { width: 36px; }
+.u-wd--48   { width: 48px; }
+.u-wd--64   { width: 64px; }
+.u-wd--72   { width: 72px; }
+.u-wd-child--20 > *  { width: 20px; }
+.u-wd-child--40 > *  { width: 40px; }
+.u-wd-child--60 > *  { width: 60px; }
+.u-wd-child--80 > *  { width: 80px; }
+.u-wd-child--100 > * { width: 100px; }

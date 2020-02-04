@@ -1,0 +1,52 @@
+/*! ########## 3.2 Breadcrumbs ########## */
+
+.c-breadcrumb__item {
+  + .c-breadcrumb__item::before {
+    font-family: $font-family-roboto;
+  }
+}
+
+.c-breadcrumb--white {
+  .c-breadcrumb__item {
+    color: #fff;
+    opacity: .5;
+
+    + .c-breadcrumb__item::before { color: #fff; }
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+
+    &.active {
+      color: #fff;
+      opacity: 1;
+
+      &::before { opacity: .5; }
+    }
+  }
+}
+
+.c-breadcrumb--gray-dark {
+  .c-breadcrumb__item { color: $gray-dark; }
+}
+
+.c-breadcrumb--gray {
+  .c-breadcrumb__item {
+    color: $gray;
+    &:hover,
+    &:focus { color: $gray-dark; }
+  }
+}
+
+.c-breadcrumb--gray-light {
+  .c-breadcrumb__item {
+    color: $gray-light;
+    &:hover,
+    &:focus { color: $gray-dark; }
+
+    &.active {
+      color: $gray;
+    }
+  }
+}

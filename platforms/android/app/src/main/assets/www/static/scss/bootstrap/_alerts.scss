@@ -1,0 +1,50 @@
+/*! ########## 3.1 Alerts ########## */
+
+.c-alert {
+  border-width: 0;
+  padding: 15px 20px;
+  position: relative;
+
+  .close { opacity: .25; }
+}
+
+.c-alert--bordered {
+  border-width: 1px;
+
+  &.c-alert--success { background-color: lighten($state-success-bg, 18%); }
+  &.c-alert--info { background-color: lighten($state-success-bg, 18%); }
+  &.c-alert--warning { background-color: lighten($state-warning-bg, 14%); }
+  &.c-alert--danger { background-color: lighten($state-danger-bg, 10%); }
+}
+
+.c-alert--solid {
+  border-color: transparent;
+  color: #fff;
+
+  &.c-alert--success { background-color: $brand-success; }
+  &.c-alert--info { background-color: $brand-info; }
+  &.c-alert--warning { background-color: $brand-warning; }
+  &.c-alert--danger { background-color: $brand-danger; }
+  &.c-alert--inverse { background-color: $brand-inverse; }
+}
+
+.c-alert__icon {
+  opacity: .95;
+  line-height: 0;
+  margin-right: 10px;
+  position: relative;
+}
+
+.c-alert__outline {
+  background-color: transparent;
+
+  .c-alert__icon {
+    float: left;
+    line-height: 0;
+    margin-right: 15px;
+  }
+
+  &.c-alert-border--success {
+    border: 1px solid $brand-success;
+  }
+}

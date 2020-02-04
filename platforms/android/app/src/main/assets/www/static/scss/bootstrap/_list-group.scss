@@ -1,0 +1,43 @@
+/*! ########## 3.14 List Group ########## */
+
+.c-list__group--inverse {
+  .c-list__group-item {
+    border-color: rgba(#fff, .2) !important;
+    border-bottom-width: 0;
+    color: rgba(#fff, .75);
+  }
+}
+
+.c-list__group-item--action {
+  @include transition($transition-base);
+}
+
+.c-list__group--transparent {
+  .c-list__group-item {
+    background-color: transparent;
+    padding: 15px 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-color: $card-border-color;
+
+    &:first-child { @include border-top-radius(0); }
+    &:last-child { @include border-bottom-radius(0); }
+  }
+}
+
+.c-list__group-sm {
+  .c-list__group-item {
+    font-size: $font-size-sm;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+}
+
+.c-list__group-xs {
+  .c-list__group-item {
+    font-size: $font-size-xs;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}

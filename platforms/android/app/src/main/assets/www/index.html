@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+
+      <!--
+       Customize this policy to fit your own app's needs. For more guidance, see:
+       https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+       
+       Some notes:
+          * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+          * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+          * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+          * Enable inline JS: add 'unsafe-inline' to default-src
+      -->
+
+      <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="default">
+      <meta name="theme-color" content="#2F3292">
+      <meta name="format-detection" content="telephone=no">
+      <meta name="msapplication-tap-highlight" content="no">
+
+      <title>Gapensi&reg; | Gabungan Asosiasi Pengusaha Konstruksi Indonesia</title>
+
+      <!-- general style -->
+      <link rel="stylesheet" href="scripts/css/framework7.css">
+      <link rel="stylesheet" href="scripts/css/app.css">
+      <link rel="stylesheet" href="scripts/css/icons.css">
+
+      <!-- custom style -->
+      <link rel="stylesheet" href="scripts/css/templates.min.css">
+      <link rel="stylesheet" href="scripts/css/utilities.min.css">
+   </head>
+
+   <body>
+      <!-- start : app -->
+      <div id="app" class="hidden-md-up">
+         <!-- status bar overlay in fullscreen mode -->
+         <div class="statusbar"></div>
+
+         <!-- views/tabs container -->
+         <div class="views tabs safe-areas">
+            <!-- toolbar in bottom -->
+            <div class="toolbar tabbar-labels toolbar-bottom">
+               <div class="toolbar-inner">
+                  <!-- tab for home -->
+                  <a href="#view-bpp-home" class="tab-link tab-link-active">
+                     <i class="icon f7-icons">home</i>
+                     <i class="icon f7-icons icon-ios-fill ios-only">home_fill</i>
+                     <span class="tabbar-label">Beranda</span>
+                  </a>
+                  <!-- tab for home -->
+
+                  <!-- tab fof list (bpd) -->
+                  <a href="#view-bpd-list" class="tab-link">
+                     <i class="icon f7-icons">sort_round</i>
+                     <i class="icon f7-icons icon-ios-fill ios-only">sort_round_fill</i>
+                     <span class="tabbar-label">Daftar BPD</span>
+                  </a>
+                  <!-- tab for list (bpd) -->
+
+                  <!-- tab for login -->
+                  <a href="http://bo.gapensi.or.id/login" class="tab-link external" target="_blank">
+                     <i class="icon f7-icons">person_round</i>
+                     <i class="icon f7-icons icon-ios-fill ios-only">person_round_fill</i>
+                     <span class="tabbar-label">Login</span>
+                  </a>
+                  <!-- tab for login -->
+               </div>
+            </div>
+            <!-- toolbar in bottom -->
+
+            <!-- home view -->
+            <div id="view-bpp-home" class="view view-main tab tab-active"></div>
+            <!-- home view -->
+
+            <!-- list (bpd) view -->
+            <div id="view-bpd-list" class="view tab"></div>
+            <!-- list (bpd) view -->
+
+            <!-- login view -->
+            <div id="view-bpp-login" class="view tab"></div>
+            <!-- login view -->
+         </div>
+         <!-- views/tabs container -->
+      </div>
+      <!-- end : app -->
+
+      <!-- cordova for ios and android -->
+      <!-- <script src="cordova.js"></script> -->
+      <!-- framework7 library -->
+      <script src="scripts/js/framework7.min.js"></script>
+      <!-- app routes -->
+      <script src="scripts/js/routes.js"></script>
+      <!-- app custom -->
+      <script src="scripts/js/app.js"></script>
+      <!-- bootstrap framework -->
+      <script src="scripts/js/bootstrap.js"></script>
+
+   </body>
+</html>

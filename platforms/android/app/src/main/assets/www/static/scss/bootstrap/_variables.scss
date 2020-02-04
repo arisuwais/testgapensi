@@ -1,0 +1,71 @@
+// Body
+$body-bg:                       #FFFFFF;
+$body-color:                    #6E6E6E;
+
+// Border
+$border-radius:                 5px;
+
+// Buttons
+$input-btn-padding-y:           0.625rem;
+
+// Card
+$card-border-color:             #DCDCDC;
+$card-border-radius:            5px;
+$card-cap-bg:                   #FFFFFF;
+
+// Color
+$brand-primary:                 #2F3292;
+$brand-success:                 #81A84D;
+$brand-warning:                 #C4882E;
+$brand-danger:                  #A13C3C;
+$brand-info:                    #2E79C4;
+$brand-inverse:                 #E9E9E9;
+
+$black:                         #000000;
+$gray-dark:                     #6D6D6D;
+$gray:                          #A2A2A2;
+$gray-light:                    #b3b3b3;
+$gray-lighter:                  #c8c8c8;
+$gray-lightest:                 lighten($gray-lighter, 6%);
+
+// Color addons
+$color-pink:                    #e74056;
+$color-yellow:                  #f6ce1c;
+$color-orange:                  #ff5500;
+$color-turquiose:               #00a8bb;
+$color-teal:                    #048d9c;
+$color-indigo:                  #583099;
+$color-indigo-light:            #9d0bdb;
+$color-maroon:                  #8b0505;
+$color-pink-light:              #e04589;
+$color-flesh:                   #e7b5a9;
+$color-info-light:              #a0bbdf;
+
+// Fonts
+$font-family-roboto:           'Roboto', sans-serif;
+$font-family-opensans:         'Open Sans', sans-serif;
+
+$font-family-base:              $font-family-roboto;
+$font-family-serif:             $font-family-opensans;
+
+$font-size-xs:                  12px;
+
+// Form states and alerts
+$state-success-bg:              lighten($brand-success, 40%);
+$state-success-border:          lighten($brand-success, 35%);
+
+$state-info-bg:                 lighten($brand-primary, 40%);
+$state-info-border:             lighten($brand-primary, 35px);
+
+$state-warning-bg:              lighten($brand-warning, 30%);
+$state-warning-border:          lighten($brand-warning, 25%);
+
+$state-danger-bg:               lighten($brand-danger, 25%);
+$state-danger-border:           lighten($brand-danger, 20%);
+
+// Grid
+$grid-gutter-width-base:        15px;
+$line-height-base:              1.65;
+
+// Jumbotron
+$jumbotron-padding:             1.5rem;

@@ -1,0 +1,68 @@
+/*! ########## 3.18 Pagination ########## */
+.c-pagination {
+  .c-page__item {
+    .c-page__link { font-family: $font-family-roboto; }
+  }
+}
+
+.c-pagination--success { @include pagination-variant($brand-success); }
+.c-pagination--warning { @include pagination-variant($brand-warning); }
+.c-pagination--danger { @include pagination-variant($brand-danger); }
+.c-pagination--info { @include pagination-variant($brand-info); }
+.c-pagination--inverse { @include pagination-variant($brand-inverse); }
+.c-pagination--gray { @include pagination-variant($gray); }
+.c-pagination--gray-light { @include pagination-variant($gray-light); }
+
+.c-pagination--circle {
+  .c-page__item {
+    + .c-page__item { margin-left: 5px; }
+
+    .c-page__link {
+      width: 36px;
+      height: 36px;
+      text-align: center;
+      padding-left: 0;
+      padding-right: 0;
+      @include border-radius(100%);
+    }
+
+    &.active {
+      .c-page__link { border-color: transparent; }
+    }
+  }
+}
+
+.c-pagination--rounded {
+  .c-page__item {
+    + .c-page__item { margin-left: 5px; }
+    .c-page__link { @include border-radius(); }
+  }
+}
+
+.c-pagination--circle,
+.c-pagination--rounded {
+  .c-page__item {
+    span.c-page__link {
+      border-color: transparent;
+      padding-left: 0;
+      padding-right: 0;
+      width: auto;
+    }
+
+    &.disabled .c-page__link { background-color: transparent; }
+  }
+}
+
+
+.c-pagination--dark {
+  .c-page__link {
+    background-color: transparent;
+    color: #fff;
+    border-color: rgba(#fff, .2);
+
+    &:hover,
+    &:focus {
+      background-color: $gray-dark;
+    }
+  }
+}

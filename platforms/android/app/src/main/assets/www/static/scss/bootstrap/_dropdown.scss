@@ -1,0 +1,59 @@
+/*! ########## 3.7 Dropdown ########## */
+
+.c-dropdown.wide {
+  position: static;
+  .c-dropdown-menu {
+    left: auto;
+    right: 0;
+  }
+}
+
+.c-dropdown__menu {
+  padding: 7px;
+  border-color: rgba($gray-lighter, .5);
+  @include border-radius();
+}
+
+.c-dropdown__item {
+  padding: 7px 1rem;
+  @include transition($transition-base);
+  @include border-radius(2px);
+}
+
+.c-dropdown__menu--inverse {
+  .c-dropdown__item {
+    color: $gray-light;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: darken($gray-dark, 5%);
+    }
+  }
+}
+
+.c-dropdown__header {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: $font-size-xs;
+  padding: 10px 1.5rem; //$dropdown-item-padding-x;
+  margin: -7px -7px 7px;
+  border-bottom: 1px solid $gray-lighter;
+  @include border-top-radius($border-radius);
+}
+
+.c-dropdown__footer {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.c-dropdown__divider {
+  margin: 7px -7px;
+}
+
+.c-dropdown__media {
+  margin: -7px -7px 7px;
+  padding: 15px 1.25rem;
+  border-bottom: 1px solid $gray-lighter;
+}

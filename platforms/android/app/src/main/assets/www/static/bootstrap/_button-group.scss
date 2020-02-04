@@ -1,0 +1,163 @@
+// stylelint-disable selector-no-qualifying-type
+
+// Make the div behave like a button
+.c-btn__group,
+.c-btn__group--vertical {
+  position: relative;
+  display: inline-flex;
+  vertical-align: middle; // match .c-btn alignment given font-size hack above
+
+  > .c-btn {
+    position: relative;
+    flex: 1 1 auto;
+
+    // Bring the hover, focused, and "active" buttons to the front to overlay
+    // the borders properly
+    @include hover {
+      z-index: 1;
+    }
+    &:focus,
+    &:active,
+    &.active {
+      z-index: 1;
+    }
+  }
+}
+
+// Optional: Group multiple button groups together for a toolbar
+.c-btn__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  .input-group {
+    width: auto;
+  }
+}
+
+.c-btn__group {
+  // Prevent double borders when buttons are next to each other
+  > .c-btn:not(:first-child),
+  > .c-btn__group:not(:first-child) {
+    margin-left: -$btn-border-width;
+  }
+
+  // Reset rounded corners
+  > .c-btn:not(:last-child):not(.dropdown-toggle),
+  > .c-btn__group:not(:last-child) > .c-btn {
+    @include border-right-radius(0);
+  }
+
+  > .c-btn:not(:first-child),
+  > .c-btn__group:not(:first-child) > .c-btn {
+    @include border-left-radius(0);
+  }
+}
+
+// Sizing
+//
+// Remix the default button sizing classes into new ones for easier manipulation.
+
+.c-btn__group-sm > .c-btn { @extend .c-btn-sm; }
+.c-btn__group-lg > .c-btn { @extend .c-btn-lg; }
+
+
+//
+// Split button dropdowns
+//
+
+.dropdown-toggle-split {
+  padding-right: $btn-padding-x * .75;
+  padding-left: $btn-padding-x * .75;
+
+  &::after,
+  .dropup &::after,
+  .dropright &::after {
+    margin-left: 0;
+  }
+
+  .dropleft &::before {
+    margin-right: 0;
+  }
+}
+
+.c-btn-sm + .dropdown-toggle-split {
+  padding-right: $btn-padding-x-sm * .75;
+  padding-left: $btn-padding-x-sm * .75;
+}
+
+.c-btn-lg + .dropdown-toggle-split {
+  padding-right: $btn-padding-x-lg * .75;
+  padding-left: $btn-padding-x-lg * .75;
+}
+
+
+// The clickable button for toggling the menu
+// Set the same inset shadow as the :active state
+.c-btn__group.show .dropdown-toggle {
+  @include box-shadow($btn-active-box-shadow);
+
+  // Show no shadow for `.c-btn__link` since it has no other button styles.
+  &.c-btn__link {
+    @include box-shadow(none);
+  }
+}
+
+
+//
+// Vertical button groups
+//
+
+.c-btn__group-vertical {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  > .c-btn,
+  > .c-btn__group {
+    width: 100%;
+  }
+
+  > .c-btn:not(:first-child),
+  > .c-btn__group:not(:first-child) {
+    margin-top: -$btn-border-width;
+  }
+
+  // Reset rounded corners
+  > .c-btn:not(:last-child):not(.dropdown-toggle),
+  > .c-btn__group:not(:last-child) > .c-btn {
+    @include border-bottom-radius(0);
+  }
+
+  > .c-btn:not(:first-child),
+  > .c-btn__group:not(:first-child) > .c-btn {
+    @include border-top-radius(0);
+  }
+}
+
+
+// Checkbox and radio options
+//
+// In order to support the browser's form validation feedback, powered by the
+// `required` attribute, we have to "hide" the inputs via `clip`. We cannot use
+// `display: none;` or `visibility: hidden;` as that also hides the popover.
+// Simply visually hiding the inputs via `opacity` would leave them clickable in
+// certain cases which is prevented by using `clip` and `pointer-events`.
+// This way, we ensure a DOM element is visible to position the popover from.
+//
+// See https://github.com/twbs/bootstrap/pull/12794 and
+// https://github.com/twbs/bootstrap/pull/14559 for more information.
+
+.c-btn__group-toggle {
+  > .c-btn,
+  > .c-btn__group > .c-btn {
+    margin-bottom: 0; // Override default `<label>` value
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      position: absolute;
+      clip: rect(0, 0, 0, 0);
+      pointer-events: none;
+    }
+  }
+}
